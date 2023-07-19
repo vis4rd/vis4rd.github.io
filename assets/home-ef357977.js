@@ -1,0 +1,1 @@
+import{_ as t,o as _,c as o,F as s,p,a as n,b as a,e as d}from"./_plugin-vue_export-helper-efc9390c.js";const r={},c=e=>(p("data-v-dc0255eb"),e=e(),n(),e),l=c(()=>a("header",null,"Header part",-1)),i=c(()=>a("main",null,"Main part",-1));function u(e,h){return _(),o(s,null,[l,i],64)}const m=t(r,[["render",u],["__scopeId","data-v-dc0255eb"]]);d(m).mount("#app");
