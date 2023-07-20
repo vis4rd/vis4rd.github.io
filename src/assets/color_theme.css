@@ -40,6 +40,8 @@
 
     --color-a: var(--vt-c-green);
     --color-a-hover: var(--vt-c-black);
+    --color-a-disabled: var(--vt-c-divider-light-1);
+    --color-a-active: var(--vt-c-black);
 
     --color-selected: var(--vt-c-green);
 }
@@ -59,5 +61,7 @@
 
         --color-a: var(--vt-c-green);
         --color-a-hover: var(--vt-c-white);
+        --color-a-disabled: var(--vt-c-divider-dark-1);
+        --color-a-active: var(--vt-c-white);
     }
 }

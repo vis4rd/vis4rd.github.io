@@ -1,20 +1,22 @@
 <script setup>
-    import { RouterView } from "vue-router";
+    import NavigationBar from "@/components/NavigationBar.vue";
 </script>
 
 <template>
-    <header>navigation pane</header>
+    <header>
+        <NavigationBar />
+    </header>
 
     <main>
-        <RouterView />
+        <router-view />
     </main>
 </template>
 
 <style scoped>
     header {
         display: flex;
-        flex-direction: column;
-        place-items: center;
+        flex-direction: row;
+        place-content: center;
 
         width: 70%;
         max-width: 960px;
@@ -37,7 +39,7 @@
         max-width: 960px;
 
         margin: 0;
-        padding: 0;
+        padding: 1rem 0;
 
         border-style: solid;
         border-radius: 6px;
