@@ -26,8 +26,8 @@
 
         border-style: solid;
         border-radius: 6px;
-        border-width: 1px;
-        border-color: var(--color-border);
+        border-width: var(--width-section-border);
+        border-color: var(--color-section-border);
     }
 
     main {
@@ -43,7 +43,7 @@
 
         border-style: solid;
         border-radius: 6px;
-        border-width: 1px;
-        border-color: var(--color-border);
+        border-width: var(--width-section-border);
+        border-color: var(--color-section-border);
     }
 </style>

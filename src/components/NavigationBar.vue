@@ -8,7 +8,7 @@
         <NavigationLink href="/about">about/</NavigationLink>
         <NavigationLink href="/projects">projects/</NavigationLink>
         <NavigationLink href="/experience">experience/</NavigationLink>
-        <NavigationLink href="/blog">blog/</NavigationLink>
+        <NavigationLink href="/blog" disabled>blog/</NavigationLink>
     </nav>
 </template>
 

@@ -1,67 +1,74 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-    --vt-c-white: rgb(255, 255, 255);
-    --vt-c-white-soft: rgb(248, 248, 248);
-    --vt-c-white-mute: rgb(242, 242, 242);
+    /* non-color variables */
+    --time-transition: 0.3s;
+    --width-section-border: 1px;
+    --width-element-border: 1px;
 
-    --vt-c-black: rgb(24, 24, 24);
-    --vt-c-black-soft: rgb(34, 34, 34);
-    --vt-c-black-mute: rgb(40, 40, 40);
+    --font-text: Montserrat, sans-serif;
+    --font-heading: var(--font-text);
+    --font-h1: var(--font-heading);
+    --font-h2: var(--font-heading);
+    --font-h3: var(--font-heading);
 
-    --vt-c-indigo: rgb(44, 62, 80);
-
-    --vt-c-divider-light-1: rgb(180, 180, 180);
-    --vt-c-divider-light-2: rgb(117, 117, 117);
-    --vt-c-divider-dark-1: rgb(130, 130, 130);
-    --vt-c-divider-dark-2: rgb(80, 80, 80);
-
-    --vt-c-text-light-1: var(--vt-c-indigo);
-    --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-    --vt-c-text-dark-1: var(--vt-c-white);
-    --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-
-    --vt-c-green: rgb(0, 189, 126);
-
-    --transition-time: 0.3s;
+    --size-text: 18px;
 }
 
 /* semantic color variables for this project */
 /* light theme */
 :root {
-    --color-background: var(--vt-c-white);
-    --color-background-soft: var(--vt-c-white-soft);
-    --color-background-mute: var(--vt-c-white-mute);
+    /* TODO: set proper light theme */
+    --color-bg: rgb(5, 31, 48);
+    --color-element-bg: rgb(9, 42, 65);
+    --color-element-bg-hover: rgb(14, 62, 97);
 
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
+    --color-section-border: rgb(206, 198, 180);
+    --color-section-border-hover: rgb(230, 230, 230);
 
-    --color-heading: var(--vt-c-text-light-1);
-    --color-text: var(--vt-c-text-light-1);
+    --color-element-border: var(--color-section-border);
+    --color-element-border-hover: var(--color-section-border-hover);
 
-    --color-a: var(--vt-c-green);
-    --color-a-hover: var(--vt-c-black);
-    --color-a-disabled: var(--vt-c-divider-light-1);
-    --color-a-active: var(--vt-c-black);
+    --color-text: rgb(211, 211, 211);
+    --color-heading: rgb(204, 189, 150);
+    --color-h1: var(--color-heading);
+    --color-h2: var(--color-heading);
+    --color-h3: var(--color-heading);
+    --color-mark: rgb(0, 0, 0);
+    --color-mark-bg: rgb(134, 201, 221);
 
-    --color-selected: var(--vt-c-green);
+    --color-a: rgb(134, 201, 221);
+    --color-a-hover: rgb(175, 236, 255);
+    --color-a-disabled: rgb(145, 145, 145);
+    --color-a-active: rgb(255, 255, 255);
+
+    --color-selected: rgb(231, 160, 160);
 }
 
 /* dark theme */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-background: var(--vt-c-black);
-        --color-background-soft: var(--vt-c-black-soft);
-        --color-background-mute: var(--vt-c-black-mute);
+        --color-bg: rgb(5, 31, 48);
+        --color-element-bg: rgb(9, 42, 65);
+        --color-element-bg-hover: rgb(14, 62, 97);
 
-        --color-border: var(--vt-c-divider-dark-2);
-        --color-border-hover: var(--vt-c-divider-dark-1);
+        --color-section-border: rgb(206, 198, 180);
+        --color-section-border-hover: rgb(230, 230, 230);
 
-        --color-heading: var(--vt-c-text-dark-1);
-        --color-text: var(--vt-c-text-dark-2);
+        --color-element-border: var(--color-section-border);
+        --color-element-border-hover: var(--color-section-border-hover);
 
-        --color-a: var(--vt-c-green);
-        --color-a-hover: var(--vt-c-white);
-        --color-a-disabled: var(--vt-c-divider-dark-1);
-        --color-a-active: var(--vt-c-white);
+        --color-text: rgb(211, 211, 211);
+        --color-heading: rgb(204, 189, 150);
+        --color-h1: var(--color-heading);
+        --color-h2: var(--color-heading);
+        --color-h3: var(--color-heading);
+        --color-mark: rgb(0, 0, 0);
+        --color-mark-bg: rgb(134, 201, 221);
+
+        --color-a: rgb(134, 201, 221);
+        --color-a-hover: rgb(175, 236, 255);
+        --color-a-disabled: rgb(145, 145, 145);
+        --color-a-active: rgb(255, 255, 255);
+
+        --color-selected: rgb(231, 160, 160);
     }
 }

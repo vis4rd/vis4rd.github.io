@@ -5,12 +5,11 @@ body {
     margin: 0px;
 
     color: var(--color-text);
-    background: var(--color-background);
-    transition: color var(--transition-time), background-color var(--transition-time);
-    line-height: 1.6;
-    font-family: Roboto, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu,
-        Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 15px;
+    background: var(--color-bg);
+    transition: color var(--time-transition), background-color var(--time-transition);
+    line-height: 1.5;
+    font-family: var(--font-text);
+    font-size: var(--size-text);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -29,7 +28,18 @@ body {
 a {
     text-decoration: none;
     color: var(--color-a);
-    transition: var(--transition-time);
+    transition: var(--time-transition);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-h1);
+}
+
+mark {
+    color: var(--color-mark);
+    background-color: var(--color-mark-bg);
 }
 
 @media (hover: hover) {
