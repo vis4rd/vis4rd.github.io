@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import IconLink from "@/components/IconLink.vue";
+</script>
 
 <template>
     <div>
@@ -18,22 +20,39 @@
             Science.
         </p>
 
+        <p>
+            Feel free to checkout my <router-link to="/projects">projects</router-link> or
+            <router-link to="/experience">job expierience</router-link>.
+        </p>
+
         <hr>
 
         <p>
-            Feel free to checkout my <router-link to="/projects">projects</router-link> or
-            <router-link to="/expierience">job expierience</router-link>.
-        </p>
-
-        <p>
-            Find me elsewhere:
-            <!-- TODO: Horizontal tiles with icons and text labels -->
-            <div><a href="https://github.com/vis4rd" target="_blank">GitHub</a></div>
-            <div><a title="visard / visard#6782">Discord</a></div>
-            <div><a href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">LinkedIn</a></div>
-            <div><a href="mailto:aleksander.kluczka@gmail.com">E-Mail</a></div>
+            <h3>Find me elsewhere:</h3>
+            <div class="socials">
+                <!-- TODO: Horizontal tiles with icons and text labels -->
+                <IconLink icon="fa-brands fa-github">
+                    <a href="https://github.com/vis4rd" target="_blank">GitHub</a>
+                </IconLink>
+                <IconLink icon="fa-brands fa-discord">
+                    <a title="visard / visard#6782">Discord</a>
+                </IconLink>
+                <IconLink icon="fa-brands fa-linkedin-in">
+                    <a href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">LinkedIn</a>
+                </IconLink>
+                <IconLink icon="fa-solid fa-envelope">
+                    <a href="mailto:aleksander.kluczka@gmail.com">E-Mail</a>
+                </IconLink>
+            </div>
         </p>
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+</style>

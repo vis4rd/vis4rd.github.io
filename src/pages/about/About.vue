@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+    import IconLink from "@/components/IconLink.vue";
+</script>
 
 <template>
     <h1>ABOUT</h1>
@@ -14,7 +16,7 @@
     <kbd>Keyboard key</kbd>
     <dialog>Oof</dialog>
     <aside>Aside content</aside>
-    <img src="https://icons8.com/icon/i6fZC6wuprSu/home" />
+    <IconLink icon="fa-home">icon yeah</IconLink>
 </template>
 
 <style scoped></style>
