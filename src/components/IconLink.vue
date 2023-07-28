@@ -25,15 +25,21 @@
             default: false,
         },
     });
+
+    function go_to_link() {
+        if (props.href !== "") {
+            window.open(props.href, "_blank");
+        }
+    }
 </script>
 
 <template>
-    <!-- TODO: add border and maybe icons? experiment with this -->
     <div class="icon_link">
         <font-awesome-icon
             class="icon_part"
             :icon="props.icon"
             :size="props.size"
+            @click="go_to_link()"
         ></font-awesome-icon>
         <a
             class="slot_part"
@@ -41,6 +47,7 @@
             :title="props.title"
             :disabled="props.disabled"
             :active="props.active"
+            target="_blank"
         >
             <slot></slot>
         </a>
@@ -70,9 +77,12 @@
         padding-left: 0.25rem;
     }
 
-    .icon_link:hover,
-    .icon_link:hover > .slot_part {
+    .icon_link:hover {
         border-color: var(--color-a-hover);
         transition: var(--time-transition);
+        cursor: pointer;
+    }
+    .icon_link:hover .slot_part {
+        color: var(--color-a-hover);
     }
 </style>

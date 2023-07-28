@@ -31,17 +31,17 @@ import IconLink from "@/components/IconLink.vue";
             <h3>Find me elsewhere:</h3>
             <div class="socials">
                 <!-- TODO: Horizontal tiles with icons and text labels -->
-                <IconLink icon="fa-brands fa-github">
-                    <a href="https://github.com/vis4rd" target="_blank">GitHub</a>
+                <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
+                    GitHub
                 </IconLink>
-                <IconLink icon="fa-brands fa-discord">
-                    <a title="visard / visard#6782">Discord</a>
+                <IconLink icon="fa-brands fa-discord" title="visard / visard#6782">
+                    Discord
                 </IconLink>
-                <IconLink icon="fa-brands fa-linkedin-in">
-                    <a href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">LinkedIn</a>
+                <IconLink icon="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">
+                    LinkedIn
                 </IconLink>
-                <IconLink icon="fa-solid fa-envelope">
-                    <a href="mailto:aleksander.kluczka@gmail.com">E-Mail</a>
+                <IconLink icon="fa-solid fa-envelope" href="mailto:aleksander.kluczka@gmail.com">
+                    E-Mail
                 </IconLink>
             </div>
         </p>
