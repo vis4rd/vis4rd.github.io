@@ -21,7 +21,8 @@
         width: 70%;
         max-width: 960px;
 
-        margin: 2rem 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
         padding: 1rem 0;
 
         border-style: solid;
@@ -38,7 +39,8 @@
         width: 70%;
         max-width: 960px;
 
-        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         padding: 1rem 0;
 
         border-style: solid;

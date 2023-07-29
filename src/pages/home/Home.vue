@@ -1,12 +1,21 @@
 <script setup>
 import IconLink from "@/components/IconLink.vue";
+import ProfilePicture from "@/components/ProfilePicture.vue";
 </script>
 
 <template>
     <div>
-        <h1>Hi, I am visard.</h1>
+        <hr />
 
-        <p>And this is my website :).</p>
+        <span class="greetings">
+            <ProfilePicture size="100" />
+            <h1>Hi! I am visard.</h1>
+        </span>
+
+        <hr />
+        <br />
+
+        <p>... and this is my website :).</p>
 
         <p>
             I'm currently working at
@@ -30,7 +39,6 @@ import IconLink from "@/components/IconLink.vue";
         <p>
             <h3>Find me elsewhere:</h3>
             <div class="socials">
-                <!-- TODO: Horizontal tiles with icons and text labels -->
                 <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
                     GitHub
                 </IconLink>
@@ -49,6 +57,16 @@ import IconLink from "@/components/IconLink.vue";
 </template>
 
 <style scoped>
+
+.greetings {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    place-content: center;
+    gap: 1rem;
+
+    width: 100%;
+}
 .socials {
     display: flex;
     flex-direction: row;
