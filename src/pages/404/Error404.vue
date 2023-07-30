@@ -6,7 +6,11 @@
 
         <hr />
         <div class="ohno-img">
-            <img src="@/../assets/ohno-anyway.jpg" alt="Oh no! Anyway" width="300" />
+            <img
+                src="/assets/ohno-anyway.jpg"
+                alt="Even loading images does not work :(. Here should be 'Oh no! Anyway' image."
+                width="300"
+            />
         </div>
         <hr />
 
@@ -21,10 +25,23 @@
     .ohno-img {
         display: flex;
         flex-direction: column;
-        place-content: center;
+        place-items: center;
+        padding: 0;
         margin: 0 200px;
     }
     img {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        place-items: center;
+        place-content: center;
+
+        font-size: 0.85rem;
+
         margin: 1rem;
+
+        border-style: dotted;
+        border-color: var(--color-element-border);
+        border-width: 2px;
     }
 </style>

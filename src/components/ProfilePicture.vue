@@ -2,7 +2,11 @@
     const props = defineProps({
         src: {
             type: String,
-            default: "@/../assets/visard.png",
+            default: "/assets/visard.png",
+        },
+        alt: {
+            type: String,
+            default: "Where is my profile pic? >:(",
         },
         title: {
             type: String,
@@ -18,7 +22,7 @@
 <template>
     <img
         :src="props.src"
-        :alt="props.title"
+        :alt="props.alt"
         :title="props.title"
         :width="props.size"
         :height="props.size"
@@ -27,6 +31,14 @@
 
 <style scoped>
     img {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        place-items: center;
+        place-content: center;
+
+        font-size: 0.85rem;
+
         border-radius: 50%;
         border-style: dotted;
         border-color: var(--color-element-border);
