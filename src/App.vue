@@ -35,13 +35,14 @@
         display: flex;
         flex-direction: column;
         place-items: center;
+        box-sizing: border-box;
 
         width: 70%;
         max-width: 960px;
 
         margin-top: 1rem;
         margin-bottom: 2rem;
-        padding: 1rem 0;
+        padding: 1rem 4rem;
 
         border-style: solid;
         border-radius: 6px;

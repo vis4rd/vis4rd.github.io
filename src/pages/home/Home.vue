@@ -8,7 +8,7 @@ import ProfilePicture from "@/components/ProfilePicture.vue";
         <hr />
 
         <span class="greetings">
-            <ProfilePicture size="100" />
+            <ProfilePicture :size=100 />
             <h1>Hi! I am visard.</h1>
         </span>
 

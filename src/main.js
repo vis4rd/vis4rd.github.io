@@ -28,6 +28,11 @@ const router = createRouter({
             component: About,
         },
         {
+            path: "/playground",
+            name: "Playground",
+            component: () => import("./pages/playground/Playground.vue"),
+        },
+        {
             path: "/:pathMatch(.*)*",
             name: "404",
             component: Error404,

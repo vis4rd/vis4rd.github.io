@@ -1,22 +1,49 @@
 <script setup>
-    import IconLink from "@/components/IconLink.vue";
+    function calc_my_age() {
+        return Math.abs(new Date(Date.now() - 956613600000).getUTCFullYear() - 1970);
+    }
 </script>
 
 <template>
-    <h1>ABOUT</h1>
-    Header part Main part
-    <mark>Marked text</mark>
-    <em>Em text</em>
-    <strong>Strong text</strong>
-    <sub>Subscripted text</sub>
-    <sup>Superscripted text</sup>
-    <s>S text</s>
-    <output>Output text</output>
-    <meter min="0" max="10" value="6" />
-    <kbd>Keyboard key</kbd>
-    <dialog>Oof</dialog>
-    <aside>Aside content</aside>
-    <IconLink icon="fa-home">icon yeah</IconLink>
+    <div>
+        <h1>About me</h1>
+
+        <hr />
+
+        <p>
+            I am a {{ calc_my_age() }} years old programming enthusiast from Poland. Currently I am
+            master's degree student at AGH UST in Applied Computer Science.
+        </p>
+
+        <p>
+            Since I was young I was interested in computers and graphics. Learning C/C++ opened a
+            door for me to dive into low-level rendering programming. So far I have been working
+            with graphics libraries like SFML, SDL, Raylib, but also got comfortable with OpenGL. My
+            plans for the future are to learn Vulkan API. In my free time I slowly develop
+            <a href="https://github.com/vis4rd/monoshot/tree/dev" target="_blank">Monoshot</a> - a
+            simple top-down shooter game, as a hobby.
+        </p>
+
+        <p>
+            Other than that I am well versed in web development thanks to my university. I can
+            develop full-stack web applications using modern Javascript frameworks, Python, Node or
+            even Java. I am also familiar with SQL and NoSQL databases. That being said, these
+            skills have let me build and deploy this simple website, for example.
+        </p>
+
+        <p>
+            Outside of programming I like playing football, swimming and cycling. I am also a movie
+            geek - I love sci-fi genre, so naturally I am big fan of Star Wars unvierse. From time
+            to time I like to read some good books, mostly fantasy and sci-fi as well. I could
+            recommend <em>'Witcher'</em> saga, <em>'Three-Body Problem'</em> and
+            <em>'Lord of the Ice Garden'</em> series.
+        </p>
+
+        <p>
+            That's it! In future I might start a blog here about some intriguing topics, so who
+            knows, maybe you will be able to read more there.
+        </p>
+    </div>
 </template>
 
 <style scoped></style>
