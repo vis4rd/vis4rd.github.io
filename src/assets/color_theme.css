@@ -4,7 +4,7 @@
     --width-section-border: 1px;
     --width-element-border: 1px;
 
-    --font-text: Montserrat, sans-serif;
+    --font-text: "Baloo 2", Montserrat, Roboto, sans-serif;
     --font-heading: var(--font-text);
     --font-h1: var(--font-heading);
     --font-h2: var(--font-heading);
