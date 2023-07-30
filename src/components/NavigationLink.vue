@@ -10,6 +10,10 @@
             type: Boolean,
             default: false,
         },
+        tooltip: {
+            type: String,
+            default: "",
+        },
         active: {
             type: Boolean,
             default: false,
@@ -26,16 +30,16 @@
 <template>
     <!-- TODO: add border and maybe icons? experiment with this -->
     <div class="nav_link">
-        <span class="disabled" v-if="props.disabled">
+        <span class="disabled" v-if="props.disabled" :title="props.tooltip">
             <slot></slot>
         </span>
-        <span class="active" v-else-if="props.active">
+        <span class="active" v-else-if="props.active" :title="props.tooltip">
             <slot></slot>
         </span>
-        <router-link v-else-if="is_not_current(props.href)" :to="props.href">
+        <router-link v-else-if="is_not_current(props.href)" :to="props.href" :title="props.tooltip">
             <slot></slot>
         </router-link>
-        <span class="current" v-else>
+        <span class="current" v-else title="You are currently here!">
             <slot></slot>
         </span>
     </div>
