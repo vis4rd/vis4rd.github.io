@@ -43,5 +43,7 @@
         border-style: dotted;
         border-color: var(--color-element-border);
         border-width: 2px;
+
+        padding: 3px;
     }
 </style>
