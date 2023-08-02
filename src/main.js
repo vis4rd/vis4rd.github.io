@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faHouse, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faDiscord, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
-import About from "./pages/about/About.vue";
 import App from "./App.vue";
 import Home from "./pages/home/Home.vue";
+import About from "./pages/about/About.vue";
+import Projects from "./pages/projects/Projects.vue";
 import Error404 from "./pages/404/Error404.vue";
 
 const router = createRouter({
@@ -26,6 +27,11 @@ const router = createRouter({
             path: "/about",
             name: "About",
             component: About,
+        },
+        {
+            path: "/projects",
+            name: "Projects",
+            component: Projects,
         },
         {
             path: "/playground",
