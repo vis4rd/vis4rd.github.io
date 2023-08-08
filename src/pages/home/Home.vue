@@ -1,63 +1,65 @@
 <script setup>
-import IconLink from "@/components/IconLink.vue";
-import ProfilePicture from "@/components/ProfilePicture.vue";
+    import IconLink from "@/components/IconLink.vue";
+    import ProfilePicture from "@/components/ProfilePicture.vue";
+    import BorderWrapper from "@/components/BorderWrapper.vue";
 </script>
 
 <template>
-    <div>
-        <hr />
+    <BorderWrapper>
+        <div>
+            <hr />
 
-        <span class="greetings">
-            <ProfilePicture :size=100 />
-            <h1>Hi! I am visard.</h1>
-        </span>
+            <span class="greetings">
+                <ProfilePicture :size=100 />
+                <h1>Hi! I am visard.</h1>
+            </span>
 
-        <hr />
-        <br />
+            <hr />
+            <br />
 
-        <p>... and this is my website :).</p>
+            <p>... and this is my website :).</p>
 
-        <p>
-            I'm currently working at
-            <a href="https://www.nokia.com/networks/" target="_blank">Nokia</a> as a C++ Software
-            Engineer.
-        </p>
+            <p>
+                I'm currently working at
+                <a href="https://www.nokia.com/networks/" target="_blank">Nokia</a> as a C++ Software
+                Engineer.
+            </p>
 
-        <p>
-            I am also a master's student at
-            <a href="https://www.agh.edu.pl/en/" target="_blank">AGH UST</a> in Applied Computer
-            Science.
-        </p>
+            <p>
+                I am also a master's student at
+                <a href="https://www.agh.edu.pl/en/" target="_blank">AGH UST</a> in Applied Computer
+                Science.
+            </p>
 
-        <p>
-            Feel free to checkout my <router-link to="/projects">projects</router-link> or
-            <router-link to="/experience">job expierience</router-link>.
-        </p>
+            <p>
+                Feel free to checkout my <router-link to="/projects">projects</router-link> or
+                <router-link to="/experience">job expierience</router-link>.
+            </p>
 
-        <hr>
+            <hr>
 
-        <p>
-            <h3>Find me elsewhere:</h3>
-            <div class="socials">
-                <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
-                    GitHub
-                </IconLink>
-                <IconLink icon="fa-brands fa-discord" title="visard / visard#6782">
-                    Discord
-                </IconLink>
-                <IconLink icon="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">
-                    LinkedIn
-                </IconLink>
-                <IconLink icon="fa-solid fa-envelope" href="mailto:aleksander.kluczka@gmail.com">
-                    E-Mail
-                </IconLink>
-            </div>
-        </p>
-    </div>
+            <p>
+                <h3>Find me elsewhere:</h3>
+                <div class="socials">
+                    <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
+                        GitHub
+                    </IconLink>
+                    <IconLink icon="fa-brands fa-discord" title="visard / visard#6782">
+                        Discord
+                    </IconLink>
+                    <IconLink icon="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">
+                        LinkedIn
+                    </IconLink>
+                    <IconLink icon="fa-solid fa-envelope" href="mailto:aleksander.kluczka@gmail.com">
+                        E-Mail
+                    </IconLink>
+                </div>
+            </p>
+        </div>
+    </BorderWrapper>
 </template>
 
 <style scoped>
-
 .greetings {
     display: flex;
     flex-direction: row;

@@ -1,24 +1,28 @@
-<script setup></script>
+<script setup>
+    import BorderWrapper from "@/components/BorderWrapper.vue";
+</script>
 
 <template>
-    <div>
-        <h1>Page not found (404).</h1>
+    <BorderWrapper>
+        <div>
+            <h1>Page not found (404).</h1>
 
-        <hr />
-        <div class="ohno-img">
-            <img
-                src="/assets/ohno-anyway.jpg"
-                alt="Even loading images does not work :(. Here should be 'Oh no! Anyway' image."
-                width="300"
-            />
+            <hr />
+            <div class="ohno-img">
+                <img
+                    src="/assets/ohno-anyway.jpg"
+                    alt="Even loading images does not work :(. Here should be 'Oh no! Anyway' image."
+                    width="300"
+                />
+            </div>
+            <hr />
+
+            <p>
+                The page you are looking for does not exist. However, you might find something by
+                searching through the <router-link to="/">home page</router-link>.
+            </p>
         </div>
-        <hr />
-
-        <p>
-            The page you are looking for does not exist. However, you might find something by
-            searching through the <router-link to="/">home page</router-link>.
-        </p>
-    </div>
+    </BorderWrapper>
 </template>
 
 <style scoped>
@@ -27,7 +31,6 @@
         flex-direction: column;
         place-items: center;
         padding: 0;
-        margin: 0 200px;
     }
     img {
         display: flex;

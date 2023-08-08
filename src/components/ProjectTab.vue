@@ -39,14 +39,6 @@
         box-sizing: border-box;
 
         width: 100%;
-        padding: 0.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-
-        border-style: solid;
-        border-radius: 6px;
-        border-width: var(--width-section-border);
-        border-color: var(--color-section-border);
     }
 
     .info {
