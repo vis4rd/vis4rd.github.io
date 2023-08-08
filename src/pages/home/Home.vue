@@ -60,19 +60,19 @@
 </template>
 
 <style scoped>
-.greetings {
-    display: flex;
-    flex-direction: row;
-    place-items: center;
-    place-content: center;
-    gap: 1rem;
+    .greetings {
+        display: flex;
+        flex-direction: row;
+        place-items: center;
+        place-content: center;
+        gap: 1rem;
 
-    width: 100%;
-}
-.socials {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-}
+        width: 100%;
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
 </style>
