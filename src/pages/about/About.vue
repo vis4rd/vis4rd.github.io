@@ -14,8 +14,8 @@
             <hr />
 
             <p>
-                I am a {{ calc_my_age() }} years old programming enthusiast from Poland. Currently I
-                am master's degree student at AGH UST in Applied Computer Science.
+                I am a {{ calc_my_age() }} years old programmer from Poland. Currently I am master's
+                degree student at AGH UST in Applied Computer Science.
             </p>
 
             <p>

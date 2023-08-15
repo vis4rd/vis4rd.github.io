@@ -8,50 +8,49 @@
     <div class="home">
         <GreetingsSection />
 
-        <BorderWrapper>
-            <div>
+        <BorderWrapper padding_top="0" padding_bottom="0">
+            <div class="intro">
                 <p>... and this is my website :).</p>
 
                 <p>
                     I'm currently working at
-                    <a href="https://www.nokia.com/networks/" target="_blank">Nokia</a> as a C++ Software
-                    Engineer.
+                    <a href="https://www.nokia.com/networks/" target="_blank">Nokia</a> as a C++
+                    Software Engineer.
                 </p>
 
                 <p>
                     I am also a master's student at
-                    <a href="https://www.agh.edu.pl/en/" target="_blank">AGH UST</a> in Applied Computer
-                    Science.
+                    <a href="https://www.agh.edu.pl/en/" target="_blank">AGH UST</a> in Applied
+                    Computer Science.
                 </p>
 
                 <p>
                     Feel free to checkout my <router-link to="/projects">projects</router-link> or
                     <router-link to="/experience">job experience</router-link>.
                 </p>
-
-                <hr>
-
-                <p>
-                    <h3>Find me elsewhere:</h3>
-                    <div class="socials">
-                        <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
-                            GitHub
-                        </IconLink>
-                        <IconLink icon="fa-brands fa-discord" title="visard / visard#6782">
-                            Discord
-                        </IconLink>
-                        <IconLink icon="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">
-                            LinkedIn
-                        </IconLink>
-                        <IconLink icon="fa-solid fa-envelope" href="mailto:aleksander.kluczka@gmail.com">
-                            E-Mail
-                        </IconLink>
-                    </div>
-                </p>
+            </div>
+        </BorderWrapper>
+        <BorderWrapper padding_top="0">
+            <h2>Find me elsewhere:</h2>
+            <div class="socials">
+                <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
+                    GitHub
+                </IconLink>
+                <IconLink icon="fa-brands fa-discord" title="visard / visard#6782">
+                    Discord
+                </IconLink>
+                <IconLink
+                    icon="fa-brands fa-linkedin-in"
+                    href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US"
+                >
+                    LinkedIn
+                </IconLink>
+                <IconLink icon="fa-solid fa-envelope" href="mailto:aleksander.kluczka@gmail.com">
+                    E-Mail
+                </IconLink>
             </div>
         </BorderWrapper>
     </div>
-
 </template>
 
 <style scoped>
