@@ -7,7 +7,9 @@
         <NavigationLink href="/home">home/</NavigationLink>
         <NavigationLink href="/about">about/</NavigationLink>
         <NavigationLink href="/projects">projects/</NavigationLink>
-        <NavigationLink href="/experience">experience/</NavigationLink>
+        <NavigationLink href="/experience" disabled tooltip="Coming soon!"
+            >experience/</NavigationLink
+        >
         <NavigationLink href="/blog" disabled tooltip="Coming soon! (maybe)">blog/</NavigationLink>
     </nav>
 </template>

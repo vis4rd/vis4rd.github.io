@@ -33,7 +33,7 @@
 
             <p>
                 Feel free to checkout my <router-link to="/projects">projects</router-link> or
-                <router-link to="/experience">job expierience</router-link>.
+                <router-link to="/experience">job experience</router-link>.
             </p>
 
             <hr>
