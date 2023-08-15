@@ -44,6 +44,10 @@
         border-color: var(--color-element-border);
         border-width: 2px;
 
+        border-left-style: solid;
+        border-bottom-style: solid;
+        border-left-width: 1px;
+
         padding: 3px;
     }
 </style>
