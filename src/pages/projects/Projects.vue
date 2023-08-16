@@ -8,7 +8,7 @@
             <template #title>My own website</template>
             <template #date>2023</template>
             <template #href>
-                <a href="https://github.com/vis4rd/vis4rd.github.io"
+                <a href="https://github.com/vis4rd/vis4rd.github.io" target="_blank"
                     >https://github.com/vis4rd/vis4rd.github.io</a
                 >
             </template>
@@ -23,7 +23,7 @@
             <template #title>Pydocstyle Gitlab CQ report</template>
             <template #date>2023</template>
             <template #href>
-                <a href="https://github.com/vis4rd/pydocstyle-gitlab-code-quality">
+                <a href="https://github.com/vis4rd/pydocstyle-gitlab-code-quality" target="_blank">
                     https://github.com/vis4rd/pydocstyle-gitlab-code-quality
                 </a>
             </template>
@@ -40,7 +40,7 @@
             <template #title>Monoshot game</template>
             <template #date>2022</template>
             <template #href>
-                <a href="https://github.com/vis4rd/monoshot/tree/dev"
+                <a href="https://github.com/vis4rd/monoshot/tree/dev" target="_blank"
                     >https://github.com/vis4rd/monoshot/tree/dev</a
                 >
             </template>
@@ -55,7 +55,9 @@
             <template #title>University labs and projects</template>
             <template #date>2019 - 2023</template>
             <template #href>
-                <a href="https://github.com/orgs/Aleksander-Kluczka-AGH/repositories"
+                <a
+                    href="https://github.com/orgs/Aleksander-Kluczka-AGH/repositories"
+                    target="_blank"
                     >My GitHub organization</a
                 >
             </template>
