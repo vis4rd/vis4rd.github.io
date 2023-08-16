@@ -20,6 +20,8 @@
         flex-direction: row;
         place-content: center;
 
+        gap: 1rem;
+
         width: 100%;
 
         margin: 0;

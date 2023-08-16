@@ -2,6 +2,7 @@
     import IconLink from "@/components/IconLink.vue";
     import BorderWrapper from "@/components/BorderWrapper.vue";
     import GreetingsSection from "@/components/GreetingsSection.vue";
+    import NavigationLink from "@/components/NavigationLink.vue";
 </script>
 
 <template>
@@ -25,8 +26,10 @@
                 </p>
 
                 <p>
-                    Feel free to checkout my <router-link to="/projects">projects</router-link> or
-                    <router-link to="/experience">job experience</router-link>.
+                    Feel free to check out my <router-link to="/projects">projects</router-link> or
+                    <NavigationLink href="/experience" disabled tooltip="Coming soon!">
+                        job experience</NavigationLink
+                    >.
                 </p>
             </div>
         </BorderWrapper>
