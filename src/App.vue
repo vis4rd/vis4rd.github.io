@@ -1,5 +1,6 @@
 <script setup>
     import NavigationBar from "@/components/NavigationBar.vue";
+    import FooterSection from "@/components/FooterSection.vue";
 </script>
 
 <template>
@@ -10,6 +11,10 @@
     <main>
         <router-view />
     </main>
+
+    <footer>
+        <FooterSection />
+    </footer>
 </template>
 
 <style scoped>
@@ -31,7 +36,8 @@
         border-color: var(--color-section-border);
     }
 
-    main {
+    main,
+    footer {
         display: flex;
         place-content: center;
         box-sizing: border-box;

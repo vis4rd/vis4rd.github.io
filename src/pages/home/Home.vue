@@ -9,7 +9,7 @@
         <GreetingsSection />
 
         <BorderWrapper padding_top="0" padding_bottom="0">
-            <div class="intro">
+            <div>
                 <p>... and this is my website :).</p>
 
                 <p>
