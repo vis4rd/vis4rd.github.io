@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <BorderWrapper padding_right="0" padding_top="0" padding_bottom="0">
+    <BorderWrapper padding_left="0" padding_right="0" padding_top="0" padding_bottom="0">
         <div class="project">
             <div class="info">
                 <h1>
@@ -45,13 +45,10 @@
         width: 100%;
     }
 
-    .project:has(img) {
-        padding-right: 0;
-    }
-
     .info {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        padding-left: 2rem;
     }
 
     h1,
@@ -64,11 +61,24 @@
     .content {
         box-sizing: border-box;
         display: flex;
+
+        place-items: center;
+        place-content: center;
     }
 
     .content:has(img) {
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
+    }
+
+    .content:not(:has(img)) {
+        height: 100%;
+
+        text-align: justify;
+        text-justify: distribute;
+
+        padding-right: 2rem;
+        padding-left: 1rem;
     }
 
     :slotted(img) {
@@ -80,5 +90,11 @@
         height: 160px;
 
         object-fit: cover;
+    }
+
+    @media (max-width: 960px) {
+        .content:not(:has(img)) {
+            text-justify: auto;
+        }
     }
 </style>
