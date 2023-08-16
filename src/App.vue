@@ -44,4 +44,8 @@
 
         width: 100%;
     }
+
+    footer {
+        padding-bottom: 1rem;
+    }
 </style>
