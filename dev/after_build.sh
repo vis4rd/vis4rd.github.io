@@ -5,6 +5,8 @@
 echo "Copying ./dist/index.html to ./dist/404.html"
 cp "./dist/index.html" "./dist/404.html"
 
+echo "Copying ./_config.yml to ./dist/_config.yml"
+cp "./_config.yml" "./dist/_config.yml"
 
 blog_assets_dir="./dist/assets/blog"
 

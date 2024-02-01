@@ -86,7 +86,7 @@
         border-bottom-right-radius: 6px;
 
         width: 100%;
-        /* TODO: Fix the hardcoded height here. Parent should take height of info child and adjust content height to it. */
+        /* TODO: Fix the hardcoded height here. Parent should take height of the info child and adjust content height to it. */
         height: 160px;
 
         object-fit: cover;
