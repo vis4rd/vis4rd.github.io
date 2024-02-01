@@ -4,4 +4,11 @@
     "editor.tabSize": 4,
     "eslint.lintTask.enable": true,
     "eslint.run": "onSave",
+    "[yaml]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    }
 }

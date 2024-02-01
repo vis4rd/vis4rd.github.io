@@ -7,9 +7,7 @@
     "scripts": {
         "dev": "vite",
         "build": "./dev/before_build.sh && vite build && ./dev/after_build.sh",
-        "preview": "vite preview",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "preview": "vite preview"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -36,7 +34,6 @@
         "@vue/eslint-config-prettier": "^7.1.0",
         "eslint": "^8.45.0",
         "eslint-plugin-vue": "^9.11.0",
-        "gh-pages": "^5.0.0",
         "prettier": "^2.8.8",
         "vite": "^4.3.9"
     }

@@ -5,5 +5,14 @@
     "semi": true,
     "singleAttributePerLine": false,
     "vueIndentScriptAndStyle": true,
-    "printWidth": 100
+    "printWidth": 100,
+    "bracketSameLine": true,
+    "overrides": [
+        {
+            "files": "./.github/**/*.yml",
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }
