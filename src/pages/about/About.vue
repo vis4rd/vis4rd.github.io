@@ -37,7 +37,7 @@
 
             <p>
                 Outside of programming I like playing football, swimming and cycling. I am also a
-                movie geek - I love sci-fi genre, so naturally I am big fan of Star Wars unvierse.
+                movie geek - I love sci-fi genre, so naturally I am big fan of Star Wars universe.
                 From time to time I like to read some good books, mostly fantasy and sci-fi as well.
                 I could recommend <em>'Witcher'</em> saga, <em>'Three-Body Problem'</em> and
                 <em>'Lord of the Ice Garden'</em> series.
