@@ -6,7 +6,7 @@
     <div class="projects">
         <ProjectTab>
             <template #title>My own website</template>
-            <template #date>2023</template>
+            <template #date>2023 - 2024</template>
             <template #href>
                 <a href="https://github.com/vis4rd/vis4rd.github.io" target="_blank"
                     >https://github.com/vis4rd/vis4rd.github.io</a
@@ -27,7 +27,7 @@
                     https://github.com/vis4rd/pydocstyle-gitlab-code-quality
                 </a>
             </template>
-            <template #languages>Python 3.7-3.11</template>
+            <template #languages>Python 3.7-3.12</template>
             <template #libraries>Black, isort, mypy, pylint, pydocstyle</template>
             <template #content>
                 It is a simple script which converts default pydocstyle output into Gitlab Code
@@ -53,7 +53,7 @@
 
         <ProjectTab>
             <template #title>University labs and projects</template>
-            <template #date>2019 - 2023</template>
+            <template #date>2019 - 2024</template>
             <template #href>
                 <a
                     href="https://github.com/orgs/Aleksander-Kluczka-AGH/repositories"
