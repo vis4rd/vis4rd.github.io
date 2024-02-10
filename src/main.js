@@ -10,6 +10,7 @@ import Home from "./pages/home/Home.vue";
 import About from "./pages/about/About.vue";
 import Projects from "./pages/projects/Projects.vue";
 import Error404 from "./pages/404/Error404.vue";
+import Experience from "./pages/experience/Experience.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -32,6 +33,11 @@ const router = createRouter({
             path: "/projects",
             name: "Projects",
             component: Projects,
+        },
+        {
+            path: "/experience",
+            name: "Experience",
+            component: Experience,
         },
         {
             path: "/playground",

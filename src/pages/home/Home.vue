@@ -26,10 +26,9 @@
                 </p>
 
                 <p>
-                    Feel free to check out my <router-link to="/projects">projects</router-link> or
-                    <NavigationLink href="/experience" disabled tooltip="Coming soon!">
-                        job experience</NavigationLink
-                    >.
+                    Feel free to check out my
+                    <NavigationLink href="/projects">projects</NavigationLink> or
+                    <NavigationLink href="/experience">job experience</NavigationLink>.
                 </p>
             </div>
         </BorderWrapper>
