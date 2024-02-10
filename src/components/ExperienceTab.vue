@@ -17,10 +17,10 @@
             <div class="experience">
                 <div class="short">
                     <div class="details_list">
-                        <IconInfo icon="person_4" v-if="!!this.$slots.company">
+                        <IconInfo icon="person_4" v-if="!!$slots.company">
                             <slot name="company">Company</slot>
                         </IconInfo>
-                        <IconInfo icon="calendar_month" v-if="!!this.$slots.date">
+                        <IconInfo icon="calendar_month" v-if="!!$slots.date">
                             <slot name="date">
                                 <span style="color: red">
                                     Remove template tag if you want to remove the whole line with
@@ -28,7 +28,7 @@
                                 </span>
                             </slot>
                         </IconInfo>
-                        <IconInfo icon="code" v-if="!!this.$slots.languages">
+                        <IconInfo icon="code" v-if="!!$slots.languages">
                             <slot name="languages">
                                 <span style="color: red">
                                     Remove template tag if you want to remove the whole line with
@@ -36,7 +36,7 @@
                                 </span>
                             </slot>
                         </IconInfo>
-                        <IconInfo icon="deployed_code" v-if="!!this.$slots.libraries">
+                        <IconInfo icon="deployed_code" v-if="!!$slots.libraries">
                             <slot name="libraries">
                                 <span style="color: red">
                                     Remove template tag if you want to remove the whole line with
@@ -44,7 +44,7 @@
                                 </span>
                             </slot>
                         </IconInfo>
-                        <IconInfo icon="build" v-if="!!this.$slots.tools">
+                        <IconInfo icon="build" v-if="!!$slots.tools">
                             <slot name="tools">
                                 <span style="color: red">
                                     Remove template tag if you want to remove the whole line with
