@@ -7,6 +7,7 @@ import { faGithub, faDiscord, faLinkedinIn } from "@fortawesome/free-brands-svg-
 
 import App from "./App.vue";
 import Error404 from "./pages/Error404.vue";
+import MarkdownWrapper from "./components/MarkdownWrapper.vue";
 import pages from "~pages";
 
 const routes = pages.concat([
@@ -31,4 +32,5 @@ library.add(faHouse, faGithub, faDiscord, faLinkedinIn, faEnvelope);
 const app = createApp(App);
 app.use(router);
 app.component("font-awesome-icon", FontAwesomeIcon);
+app.component("MarkdownWrapper", MarkdownWrapper);
 app.mount("#app");
