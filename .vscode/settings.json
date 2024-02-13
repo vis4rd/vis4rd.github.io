@@ -4,11 +4,25 @@
     "editor.tabSize": 4,
     "eslint.lintTask.enable": true,
     "eslint.run": "onSave",
+    "prettier.requireConfig": true,
     "[yaml]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.autoIndent": "advanced",
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.insertSpaces": true,
         "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        },
+        "editor.tabSize": 2,
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.wordWrap": "on"
     }
 }
