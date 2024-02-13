@@ -1,5 +1,6 @@
 <script setup>
     import BorderWrapper from "@/components/BorderWrapper.vue";
+    import "highlight.js/styles/felipec.css";
 
     const props = defineProps({
         frontmatter: {
@@ -57,5 +58,51 @@
     :slotted(h6) {
         margin: 0;
         padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* CODE HIGHLIGHTING */
+    :slotted(code.hljs) {
+        /* code blocks */
+        font-size: 1rem;
+
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 6px;
+        border-color: var(--color-element-border);
+    }
+
+    :slotted(code:not(.hljs)) {
+        /* inline code */
+        color: var(--color-code);
+        font-family: consolas, monospace;
+    }
+
+    :slotted(code:not(.hljs)),
+    :slotted(h1 code),
+    :slotted(h2 code),
+    :slotted(h3 code),
+    :slotted(h4 code),
+    :slotted(h5 code),
+    :slotted(h6 code) {
+        /* adjust code font size in headers and inline code */
+        font-size: 0.9em;
+    }
+
+    /* HEADER LINKS */
+    :slotted(.header_anchor) {
+        color: var(--color-header);
+    }
+
+    :slotted(.header_anchor):hover {
+        text-decoration: underline;
+    }
+
+    :slotted(.header_anchor):hover::after {
+        content: " (#)";
+        font-size: calc(max(0.4em, 0.8rem));
+        color: var(--color-a);
     }
 </style>

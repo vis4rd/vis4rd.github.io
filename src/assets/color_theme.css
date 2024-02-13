@@ -34,6 +34,7 @@
     --color-h3: var(--color-heading);
     --color-mark: rgb(0, 0, 0);
     --color-mark-bg: rgb(134, 201, 221);
+    --color-code: rgb(185, 156, 77);
 
     --color-a: rgb(134, 201, 221);
     --color-a-hover: rgb(175, 236, 255);
