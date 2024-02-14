@@ -114,9 +114,11 @@ This way we can check whether all `fs-options` are respected.
 
 ### Tables
 
-| one | two | three |
-| --- | --- | ----- |
-| 1   | 2   | 3     |
+| one            | two               | three |
+| -------------- | ----------------- | ----- |
+| something wild | 2                 | 3     |
+| 1              | truly exceptional | 3     |
+| 1              | 2                 | 3     |
 
 ### Bolds, italics
 
@@ -199,7 +201,7 @@ And another: google.com
 
 ### Images
 
-![Alternative text](../../dist/assets/monoshot.png)
+![Alternative text](/assets/monoshot.png)
 
 ### Footnotes
 
