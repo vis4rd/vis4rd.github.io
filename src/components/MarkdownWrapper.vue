@@ -167,4 +167,43 @@
         /* bottom right cell */
         border-bottom-right-radius: 6px;
     }
+
+    /* BLOCK QUOTES */
+    :slotted(blockquote) {
+        border-radius: 6px;
+
+        border-left-style: solid;
+        border-left-width: 4px;
+        border-left-color: var(--color-element-border);
+
+        padding: 0.5rem;
+        margin: 0;
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+        background-color: var(--color-blockquote-bg);
+    }
+
+    :slotted(blockquote p) {
+        /* paragraph inside blockquote */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    :slotted(blockquote p:first-child) {
+        /* first paragraph inside blockquote */
+        margin-top: 0;
+    }
+
+    :slotted(blockquote p:last-child),
+    :slotted(blockquote :not(p):last-child) {
+        /* last paragraph inside blockquote */
+        /* last element inside blockquote that is not a paragraph */
+        margin-bottom: 0;
+    }
+
+    :slotted(blockquote p:has(+ :not(p))) {
+        /* paragraph (inside blockquote) which next sibling is not a paragraph */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 </style>

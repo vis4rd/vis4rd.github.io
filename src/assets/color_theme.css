@@ -20,6 +20,7 @@
     --color-bg: rgb(5, 31, 48);
     --color-element-bg: rgb(9, 42, 65);
     --color-element-bg-hover: rgb(14, 62, 97);
+    --color-blockquote-bg: rgba(255, 255, 255, 0.08);
 
     --color-section-border: rgb(206, 198, 180);
     --color-section-border-hover: rgb(230, 230, 230);

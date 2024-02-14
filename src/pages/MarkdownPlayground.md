@@ -130,17 +130,34 @@ _This is italic._ Compared to normal.
 
 > Single-line quote
 
-> Multi-line
-> quote
+> Lorem ipsum and some other incredibely long blockquote
+> that should expand beyond our coprehension.
+>
+> And here is the next paragraph of this blockquote. This should also
+> be very long and not nice.
 
 > Multi-level
+>
 > Multi-line
 >
-> > quote blocks
-> > with many lines
+> > Lorem ipsum and some other incredibely long blockquote
+> > that should expand beyond our coprehension.
 > >
-> > > Even third level
-> > > Let's go
+> > And here is the next paragraph of this blockquote. This should also
+> > be very long and not nice.
+> > > Lorem ipsum and some other incredibely long blockquote
+> > > that should expand beyond our coprehension.
+> > >
+> > > And here is the next paragraph of this blockquote. This should also
+> > > be very long and not nice.
+> > ```
+> > Code block.
+> > Multiline!
+> > ```
+>
+> `inline code`
+> > `inline code`
+> > > `inline code`
 
 ### Ordered lists, unordered lists
 
