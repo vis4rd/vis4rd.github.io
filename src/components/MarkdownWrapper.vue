@@ -206,4 +206,55 @@
         margin-top: 0;
         margin-bottom: 0;
     }
+
+    /* TASK LIST */
+    :slotted(ul.contains-task-list) {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    :slotted(ul.contains-task-list ul.contains-task-list) {
+        margin-left: 1.5rem;
+    }
+
+    :slotted(input[type="checkbox"].task-list-item-checkbox) {
+        display: none;
+    }
+
+    :slotted(li.task-list-item) {
+        display: grid;
+        grid-template-columns: 1.5rem max-content;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    :slotted(li.task-list-item::before) {
+        content: "";
+        width: 1.15rem;
+        height: 1.15rem;
+
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
+        border-style: solid;
+        border-width: 1px;
+        border-color: var(--color-element-border);
+        border-radius: 4px;
+    }
+
+    :slotted(
+            li.task-list-item:has(input[type="checkbox"].task-list-item-checkbox:checked)::before
+        ) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 4px;
+        content: "✔";
+        color: var(--color-bg);
+        border-color: var(--color-element-border);
+        background-color: var(--color-element-border);
+    }
 </style>
