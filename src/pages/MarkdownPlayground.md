@@ -256,7 +256,7 @@ term
 
 ### Emoji
 
-This is so unfunny! :joy: , :puke:
+This is so unfunny! :joy:, :confused:.
 
 ### Highlight
 

@@ -11,6 +11,7 @@ import MarkdownItHighlightJs from "markdown-it-highlightjs";
 import MarkdownItSub from "markdown-it-sub";
 import MarkdownItSup from "markdown-it-sup";
 import MarkdownItTaskLists from "markdown-it-task-lists";
+import { full as MarkdownItEmoji } from "markdown-it-emoji";
 import { nodePolyfills } from "vite-plugin-node-polyfills";
 
 export default defineConfig({
@@ -41,6 +42,9 @@ export default defineConfig({
                 md.use(MarkdownItSub);
                 md.use(MarkdownItSup);
                 md.use(MarkdownItTaskLists);
+                md.use(MarkdownItEmoji, {
+                    shortcuts: {}, // disable automatic ascii emoji conversion
+                });
             },
         }),
         nodePolyfills({

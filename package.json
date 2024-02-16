@@ -17,6 +17,7 @@
         "gray-matter": "^4.0.3",
         "markdown-it-abbr": "^2.0.0",
         "markdown-it-anchor": "^8.6.7",
+        "markdown-it-emoji": "^3.0.0",
         "markdown-it-footnote": "^4.0.0",
         "markdown-it-highlightjs": "^4.0.1",
         "markdown-it-sub": "^2.0.0",
