@@ -1,5 +1,7 @@
 <script setup>
     import BorderWrapper from "@/components/BorderWrapper.vue";
+    import ToolsBar from "@/components/ToolsBar.vue";
+    import LinkContainer from "@/components/LinkContainer.vue";
     import "highlight.js/styles/github-dark.css";
 
     const props = defineProps({
@@ -23,6 +25,14 @@
         <BorderWrapper padding_left="2rem" padding_right="2rem">
             <slot></slot>
         </BorderWrapper>
+        <ToolsBar>
+            <LinkContainer back_to_top title="Scroll to the top of this page.">
+                Back to top
+            </LinkContainer>
+            <LinkContainer local href="/blog" title="Get back to all blog articles.">
+                Back to blog list
+            </LinkContainer>
+        </ToolsBar>
     </div>
 </template>
 
