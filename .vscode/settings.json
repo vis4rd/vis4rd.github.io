@@ -4,6 +4,11 @@
     "editor.tabSize": 4,
     "eslint.lintTask.enable": true,
     "eslint.run": "onSave",
+    "markdown.copyFiles.destination": {
+        "**/*.md": "${documentWorkspaceFolder}/public/assets/"
+    },
+    "markdown.copyFiles.overwriteBehavior": "nameIncrementally",
+    "markdown.extension.list.indentationSize": "inherit",
     "prettier.requireConfig": true,
     "[yaml]": {
         "diffEditor.ignoreTrimWhitespace": false,

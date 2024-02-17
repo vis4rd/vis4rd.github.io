@@ -4,5 +4,6 @@
 
 if [ -d "./dist" ]; then
     echo "Removing ./dist/ contents before building"
-    rm -r ./dist/*
+    rm -r ./dist/* 2> /dev/null
+    exit 0
 fi

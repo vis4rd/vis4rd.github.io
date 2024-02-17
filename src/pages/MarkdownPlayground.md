@@ -98,6 +98,8 @@ This way we can check whether all `fs-options` are respected.
 
 ## Testing
 
+![/assets/image-1.png](/assets/image-1.png)
+
 ## VERY LONG TO WRITE HEADER WHICH SHOULD OVERFLOWWWWWWWWWWWWWW
 
 ## VERY LONG TO WRITE HEADER WHICH SHOULD OVERFLOWWWWWWWWW
