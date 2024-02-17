@@ -10,6 +10,9 @@
 </script>
 
 <template>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
     <div class="markdown_wrapper">
         <BorderWrapper padding_left="2rem" padding_right="2rem">
             <div class="markdown_frontmatter">

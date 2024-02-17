@@ -275,8 +275,7 @@ This is some funky level math: `h`:$(\Z_2)^7 \rightarrow (\Z_2)^4$.
 And this is how math block looks like:
 
 $$
-A =
-\begin{pmatrix}
+A = \begin{pmatrix}
 1 & 0 & 0 & 0 \\\
 1 & 1 & 0 & 0 \\\
 1 & 1 & 1 & 0 \\\

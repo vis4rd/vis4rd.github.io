@@ -12,6 +12,8 @@ import MarkdownItSub from "markdown-it-sub";
 import MarkdownItSup from "markdown-it-sup";
 import MarkdownItTaskLists from "markdown-it-task-lists";
 import MarkdownItMark from "markdown-it-mark";
+import MarkdownItTexMath from "markdown-it-texmath";
+import KateX from "katex";
 import { full as MarkdownItEmoji } from "markdown-it-emoji";
 import { nodePolyfills } from "vite-plugin-node-polyfills";
 
@@ -47,6 +49,10 @@ export default defineConfig({
                     shortcuts: {}, // disable automatic ascii emoji conversion
                 });
                 md.use(MarkdownItMark);
+                md.use(MarkdownItTexMath, {
+                    engine: KateX,
+                    delimiters: "dollars",
+                });
             },
         }),
         nodePolyfills({
