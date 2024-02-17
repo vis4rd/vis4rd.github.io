@@ -1,6 +1,6 @@
 <script setup>
     import BorderWrapper from "@/components/BorderWrapper.vue";
-    import "highlight.js/styles/felipec.css";
+    import "highlight.js/styles/github-dark.css";
 
     const props = defineProps({
         frontmatter: {
