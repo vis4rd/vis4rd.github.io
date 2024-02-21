@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# UTILS
+
+function get_repo_root_path() {
+    local repository_root_path=$(git rev-parse --show-toplevel)
+    repository_root_path="${repository_root_path,,}" # convert path to lowercase
+    repository_root_path=$(echo "/$repository_root_path" | sed 's/://') # replace C:/ with /c/ on windows
+    echo "$repository_root_path"
+}
+
+# CHECKS
+
+function check_media_paths_validation() {
+    local root_path=$(get_repo_root_path)
+    source "$root_path/dev/validate_media_paths.sh"
+    exit $?
+}
+
+# Check if all media paths in .vue and .md files are correct
+check_media_paths_validation
