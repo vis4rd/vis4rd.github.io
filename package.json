@@ -6,7 +6,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "./dev/before_build.sh && vite build && ./dev/after_build.sh",
+        "before_build": "sh ./dev/before_build.sh",
+        "after_build": "sh ./dev/after_build.sh",
+        "build": "npm run before_build && vite build && npm run after_build",
         "preview": "vite preview"
     },
     "dependencies": {

@@ -13,7 +13,7 @@ fi
 
 # check if the directory is empty
 if [ ! "$(ls -A ./src/pages/blog)" ]; then
-    echo "Directory $blog_assets_dir is empty. Skipping copying frontmatter"
+    echo "Directory './src/pages/blog' is empty. Skipping copying frontmatter"
     exit 0
 fi
 

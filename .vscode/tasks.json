@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build project",
+            "detail": "Launch 'npm run build' to build the project (using scripts from 'package.json').",
+            "type": "shell",
+            "command": "npm run build",
+            "group": "build",
+            "problemMatcher": [],
+            "icon": {
+                "color": "terminal.ansiGreen",
+                "id": "wrench"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "Validate media paths",
+            "detail": "Validate paths to images in .vue and .md sources.",
+            "type": "shell",
+            "command": "sh ./dev/validate_media_paths.sh",
+            "problemMatcher": [],
+            "icon": {
+                "color": "terminal.ansiCyan",
+                "id": "edit"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        }
+    ]
+}
