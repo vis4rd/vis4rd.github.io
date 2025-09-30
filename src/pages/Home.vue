@@ -20,12 +20,6 @@
                 </p>
 
                 <p>
-                    I am also a master's student at
-                    <a href="https://www.agh.edu.pl/en/" target="_blank">AGH UST</a> in Applied
-                    Computer Science.
-                </p>
-
-                <p>
                     Feel free to check out my
                     <NavigationLink href="/projects">projects</NavigationLink> or
                     <NavigationLink href="/experience">job experience</NavigationLink>.
@@ -38,13 +32,9 @@
                 <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
                     GitHub
                 </IconLink>
-                <IconLink icon="fa-brands fa-discord" title="visard / visard#6782">
-                    Discord
-                </IconLink>
                 <IconLink
                     icon="fa-brands fa-linkedin-in"
-                    href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US"
-                >
+                    href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">
                     LinkedIn
                 </IconLink>
                 <IconLink icon="fa-solid fa-envelope" href="mailto:aleksander.kluczka@gmail.com">

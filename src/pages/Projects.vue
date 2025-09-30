@@ -6,7 +6,7 @@
     <div class="projects">
         <ProjectTab>
             <template #title>My own website</template>
-            <template #date>2023 - 2024</template>
+            <template #date>2023 - now</template>
             <template #href>
                 <a href="https://github.com/vis4rd/vis4rd.github.io" target="_blank"
                     >https://github.com/vis4rd/vis4rd.github.io</a
@@ -53,7 +53,7 @@
 
         <ProjectTab>
             <template #title>University labs and projects</template>
-            <template #date>2019 - 2024</template>
+            <template #date>2019 - 2025</template>
             <template #href>
                 <a
                     href="https://github.com/orgs/Aleksander-Kluczka-AGH/repositories"

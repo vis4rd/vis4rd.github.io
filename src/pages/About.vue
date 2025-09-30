@@ -14,8 +14,9 @@
             <hr />
 
             <p>
-                I am a {{ calc_my_age() }} years old programmer from Poland. Currently I am master's
-                degree student at AGH UST in Applied Computer Science.
+                I am a {{ calc_my_age() }} years old programmer from Poland. Recently I graduated
+                from AGH University of Science and Technology in Kraków with a Master's degree in
+                Applied Computer Science.
             </p>
 
             <p>
@@ -31,8 +32,12 @@
             <p>
                 Other than that I am well versed in web development thanks to my university. I can
                 develop full-stack web applications using modern Javascript frameworks, Python, Node
-                or even Java. I am also familiar with SQL and NoSQL databases. That being said,
-                these skills have let me build and deploy this simple website, for example.
+                or even Java.
+            </p>
+
+            <p>
+                As a master thesis I created a chat application based on Solana blockchain. I
+                learned a lot about blockchain technology, smart contracts and cryptocurrencies.
             </p>
 
             <p>

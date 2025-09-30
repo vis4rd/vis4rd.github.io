@@ -53,15 +53,16 @@
             <template #company>
                 <a href="https://www.agh.edu.pl/en/" target="_blank">AGH UST</a>
             </template>
-            <template #job_title> Applied Computer Science Student </template>
-            <template #date> 2019.10 - present </template>
+            <template #job_title> Master of Science in Applied Computer Science </template>
+            <template #date> 2019.10 - 2025.09 </template>
+            <template #languages> Rust, Anchor, Go </template>
+            <template #tools> Blockchain, Cryptography, dApps, Web3, Neural Networks </template>
             <template #description>
                 <p>
-                    I am currently a master's student at AGH UST in Applied Computer Science. Feel
-                    free to check out my journey on
-                    <a href="https://github.com/Aleksander-Kluczka-AGH" target="_blank"
-                        >my GitHub</a
-                    >
+                    I defended my master thesis at AGH UST in Applied Computer Science. Feel free to
+                    check out my journey on
+                    <a href="https://github.com/Aleksander-Kluczka-AGH" target="_blank">my GitHub</a
+                    >.
                 </p>
             </template>
         </ExperienceTab>
