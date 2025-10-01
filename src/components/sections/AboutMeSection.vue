@@ -27,7 +27,7 @@
 
         gap: 2rem;
 
-        border: none !important;
+        outline: none !important;
         padding: 0 !important;
     }
 

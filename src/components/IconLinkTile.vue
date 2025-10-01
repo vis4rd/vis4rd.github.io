@@ -48,6 +48,7 @@
             :active="props.active"
             target="_blank">
             <Icon
+                class="icon_link_tile_icon"
                 :icon="props.icon"
                 :width="props.size"
                 :height="props.size"
@@ -59,18 +60,19 @@
 <style scoped>
     .icon_link_tile_wrapper {
         padding: 0;
+        height: 100%;
     }
 
     .icon_link_tile {
         display: flex;
-        align-items: center;
+        place-items: center;
+        place-content: center;
         color: var(--color-heading);
 
         border-radius: var(--radius-border);
 
-        padding-inline: 0.6rem;
-        padding-block: 0.5rem;
         height: 100%;
+        aspect-ratio: 1 / 1;
 
         transition: var(--time-transition);
     }
@@ -79,5 +81,9 @@
         background-color: var(--color-element-bg-hover);
         color: var(--color-border-hover);
         cursor: pointer;
+    }
+
+    .icon_link_tile_icon {
+        padding: 0.5rem;
     }
 </style>

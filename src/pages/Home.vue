@@ -2,27 +2,29 @@
     import IconLinkTile from "@/components/IconLinkTile.vue";
     import AboutMeSection from "@/components/sections/AboutMeSection.vue";
     import TileWrapper from "@/components/base/TileWrapper.vue";
-    import SectionWrapper from "@/components/base/SectionWrapper.vue";
+    import TileBar from "@/components/TileBar.vue";
 </script>
 
 <template>
     <div class="home">
         <AboutMeSection />
-        <SectionWrapper class="socials">
-            <TileWrapper class="socials_label"> My socials: </TileWrapper>
-            <IconLinkTile
-                icon="fluent:branch-fork-24-regular"
-                href="https://github.com/vis4rd"
-                title="My GitHub profile" />
-            <IconLinkTile
-                icon="fluent:people-16-regular"
-                href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US"
-                title="My Linked-In profile" />
-            <IconLinkTile
-                icon="fluent:mail-16-regular"
-                href="mailto:aleksander.kluczka@gmail.com"
-                title="Send me an e-mail" />
-        </SectionWrapper>
+        <TileBar>
+            <template #left>
+                <TileWrapper class="socials_label"> My socials: </TileWrapper>
+                <IconLinkTile
+                    icon="fluent:branch-fork-24-regular"
+                    href="https://github.com/vis4rd"
+                    title="My GitHub profile" />
+                <IconLinkTile
+                    icon="fluent:people-16-regular"
+                    href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US"
+                    title="My Linked-In profile" />
+                <IconLinkTile
+                    icon="fluent:mail-16-regular"
+                    href="mailto:aleksander.kluczka@gmail.com"
+                    title="Send me an e-mail" />
+            </template>
+        </TileBar>
     </div>
 </template>
 
@@ -45,7 +47,7 @@
 
         padding: 0;
 
-        border: none;
+        outline: none;
     }
 
     .socials > * {

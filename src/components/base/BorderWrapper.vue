@@ -11,9 +11,9 @@
         place-items: center;
         box-sizing: border-box;
 
-        border-style: solid;
+        outline-width: 1px;
+        outline-color: var(--color-section-border);
+        outline-style: solid;
         border-radius: var(--radius-border);
-        border-width: var(--width-section-border);
-        border-color: var(--color-section-border);
     }
 </style>

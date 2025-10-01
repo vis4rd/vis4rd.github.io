@@ -15,7 +15,7 @@
 
 <style scoped>
     .footer_section_wrapper {
-        border-style: dashed;
+        outline-style: dashed;
         padding-block: 0.5rem;
     }
 
