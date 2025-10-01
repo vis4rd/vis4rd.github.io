@@ -14,7 +14,7 @@
 <template>
     <span class="icon_info">
         <Icon class="icon_info_icon" :icon="props.icon" :width="size" :height="size" />
-        <slot>Icon text</slot>
+        <div class="no-overflow"><slot>Icon text</slot></div>
     </span>
 </template>
 
@@ -31,5 +31,10 @@
     }
     .icon_info_icon {
         min-width: fit-content;
+    }
+    .no-overflow {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-wrap-mode: nowrap;
     }
 </style>

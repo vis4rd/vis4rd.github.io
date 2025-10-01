@@ -7,7 +7,7 @@
     <BorderWrapper padding_left="0" padding_right="0" padding_top="0" padding_bottom="0">
         <div class="project">
             <div class="info">
-                <h1>
+                <h1 class="no-overflow">
                     <slot name="title">Title</slot>
                 </h1>
                 <IconInfo icon="fluent:calendar-16-regular">
@@ -49,6 +49,15 @@
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         padding-left: 2rem;
+
+        flex: 0.5;
+        overflow-x: hidden;
+    }
+
+    .no-overflow {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-wrap-mode: nowrap;
     }
 
     h1,
@@ -61,6 +70,8 @@
     .content {
         box-sizing: border-box;
         display: flex;
+
+        flex: 0.5;
 
         place-items: center;
         place-content: center;
