@@ -29,15 +29,15 @@
         <BorderWrapper padding_top="0">
             <h2>Find me elsewhere:</h2>
             <div class="socials">
-                <IconLink icon="fa-brands fa-github" href="https://github.com/vis4rd">
+                <IconLink icon="fluent:branch-fork-24-regular" href="https://github.com/vis4rd">
                     GitHub
                 </IconLink>
                 <IconLink
-                    icon="fa-brands fa-linkedin-in"
+                    icon="fluent:people-16-regular"
                     href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">
                     LinkedIn
                 </IconLink>
-                <IconLink icon="fa-solid fa-envelope" href="mailto:aleksander.kluczka@gmail.com">
+                <IconLink icon="fluent:mail-16-regular" href="mailto:aleksander.kluczka@gmail.com">
                     E-Mail
                 </IconLink>
             </div>

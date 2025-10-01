@@ -1,5 +1,5 @@
 <script setup>
-    import GoogleIcon from "@/components/GoogleIcon.vue";
+    import { Icon } from "@iconify/vue";
 
     const props = defineProps({
         icon: {
@@ -7,11 +7,13 @@
             required: true,
         },
     });
+
+    const size = 22;
 </script>
 
 <template>
     <span class="icon_info">
-        <GoogleIcon :name="props.icon" />
+        <Icon class="icon_info_icon" :icon="props.icon" :width="size" :height="size" />
         <slot>Icon text</slot>
     </span>
 </template>
@@ -26,5 +28,8 @@
         padding-left: 0.1rem;
         padding-right: 0.2rem;
         gap: 0.4rem;
+    }
+    .icon_info_icon {
+        min-width: fit-content;
     }
 </style>

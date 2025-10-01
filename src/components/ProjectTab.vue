@@ -10,16 +10,16 @@
                 <h1>
                     <slot name="title">Title</slot>
                 </h1>
-                <IconInfo icon="calendar_month">
+                <IconInfo icon="fluent:calendar-16-regular">
                     <slot name="date">Date</slot>
                 </IconInfo>
-                <IconInfo icon="launch">
+                <IconInfo icon="fluent:cloud-link-16-regular">
                     <slot name="href">Link to repository</slot>
                 </IconInfo>
-                <IconInfo icon="code">
+                <IconInfo icon="fluent:code-block-16-regular">
                     <slot name="languages">Languages</slot>
                 </IconInfo>
-                <IconInfo icon="deployed_code">
+                <IconInfo icon="fluent:toolbox-16-regular">
                     <slot name="libraries">Libraries</slot>
                 </IconInfo>
             </div>

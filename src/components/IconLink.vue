@@ -1,12 +1,14 @@
 <script setup>
+    import { Icon } from "@iconify/vue";
+
     const props = defineProps({
         icon: {
             type: String,
             required: true,
         },
         size: {
-            type: String,
-            default: "lg",
+            type: Number,
+            default: 24,
         },
         href: {
             type: String,
@@ -34,24 +36,18 @@
 </script>
 
 <template>
-    <div class="icon_link">
-        <font-awesome-icon
-            class="icon_part"
-            :icon="props.icon"
-            :size="props.size"
-            @click="go_to_link()"
-        ></font-awesome-icon>
-        <a
-            class="slot_part"
-            :href="props.href"
-            :title="props.title"
-            :disabled="props.disabled"
-            :active="props.active"
-            target="_blank"
-        >
+    <a
+        class="icon_link"
+        :href="props.href"
+        :title="props.title"
+        :disabled="props.disabled"
+        :active="props.active"
+        target="_blank">
+        <Icon :icon="props.icon" :width="props.size" :height="props.size" @click="go_to_link()" />
+        <div>
             <slot></slot>
-        </a>
-    </div>
+        </div>
+    </a>
 </template>
 
 <style scoped>
@@ -62,19 +58,14 @@
 
         width: fit-content;
 
+        gap: 0.2rem;
+        padding: 0.3rem;
+
         border-bottom-style: dotted;
         border-width: 2px;
         border-color: var(--color-a);
 
         transition: var(--time-transition);
-    }
-    .icon_part {
-        padding: 0.4rem;
-        padding-right: 0.25rem;
-    }
-    .slot_part {
-        padding: 0.4rem;
-        padding-left: 0.25rem;
     }
 
     .icon_link:hover {

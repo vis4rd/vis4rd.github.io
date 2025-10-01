@@ -7,8 +7,8 @@
         <div class="footer_section">
             © {{ new Date(Date.now()).getUTCFullYear() }} visard. All Rights Reserved.
             <br />
-            Icons and fonts used from
-            <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and
+            Icons used from <a href="https://iconify.design/" target="_blank">Iconify</a>. Fonts
+            used from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and
             <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.
         </div>
     </BorderWrapper>

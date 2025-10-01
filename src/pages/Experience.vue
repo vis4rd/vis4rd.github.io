@@ -8,9 +8,9 @@
             <template #company>
                 <a href="https://www.nokia.com/networks/" target="_blank">Nokia</a>
             </template>
-            <template #job_title> Mid Software Engineer </template>
+            <template #job_title> C++ Software Engineer </template>
             <template #date> 2023.07 - present </template>
-            <template #languages> C++17, Python 3.12, TTCN3 </template>
+            <template #languages> C++20, Python 3.14, TTCN3 </template>
             <template #tools> CMake, Git, Jira, Gerrit, GitLab, GDB, Docker </template>
             <template #description>
                 <p>
@@ -56,7 +56,7 @@
             <template #job_title> Master of Science in Applied Computer Science </template>
             <template #date> 2019.10 - 2025.09 </template>
             <template #languages> Rust, Anchor, Go </template>
-            <template #tools> Blockchain, Cryptography, dApps, Web3, Neural Networks </template>
+            <template #tools> blockchain, cryptography, dApps, web3, neural networks </template>
             <template #description>
                 <p>
                     I defended my master thesis at AGH UST in Applied Computer Science. Feel free to
