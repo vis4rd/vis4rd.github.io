@@ -22,7 +22,7 @@
 
     const route = useRoute();
 
-    function is_not_current(route_link) {
+    function is_not_current(route_link: string): boolean {
         return route_link !== route.path;
     }
 </script>

@@ -7,16 +7,24 @@ import Vue from "@vitejs/plugin-vue";
 import VueRouter from "unplugin-vue-router/vite";
 
 import Markdown from "unplugin-vue-markdown/vite";
+// @ts-ignore
 import MarkdownItAbbr from "markdown-it-abbr";
 import MarkdownItAnchor from "markdown-it-anchor";
+// @ts-ignore
 import MarkdownItFootnote from "markdown-it-footnote";
 import MarkdownItHighlightJs from "markdown-it-highlightjs";
+// @ts-ignore
 import MarkdownItSub from "markdown-it-sub";
+// @ts-ignore
 import MarkdownItSup from "markdown-it-sup";
+// @ts-ignore
 import MarkdownItTaskLists from "markdown-it-task-lists";
+// @ts-ignore
 import MarkdownItMark from "markdown-it-mark";
+// @ts-ignore
 import MarkdownItTexMath from "markdown-it-texmath";
 import KateX from "katex";
+// @ts-ignore
 import { full as MarkdownItEmoji } from "markdown-it-emoji";
 
 // https://vite.dev/config/

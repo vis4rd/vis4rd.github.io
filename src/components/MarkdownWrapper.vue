@@ -3,12 +3,16 @@
     import ToolsBar from "@/components/ToolsBar.vue";
     import LinkContainer from "@/components/LinkContainer.vue";
     import "highlight.js/styles/github-dark.css";
+    import type { MarkdownFrontmatter } from "../types/MarkdownFrontmatter";
 
-    const props = defineProps({
-        frontmatter: {
-            type: Object,
-        },
-    });
+    // const props = defineProps({
+    //     frontmatter: {
+    //         type: Object,
+    //     },
+    // });
+    const props = defineProps<{
+        frontmatter: MarkdownFrontmatter;
+    }>();
 </script>
 
 <template>
@@ -18,8 +22,8 @@
     <div class="markdown_wrapper">
         <BorderWrapper padding_left="2rem" padding_right="2rem">
             <div class="markdown_frontmatter">
-                <h1>{{ frontmatter.title }}</h1>
-                <h3>{{ frontmatter.date }}</h3>
+                <h1>{{ props.frontmatter.title }}</h1>
+                <h3>{{ props.frontmatter.date }}</h3>
             </div>
         </BorderWrapper>
         <BorderWrapper padding_left="2rem" padding_right="2rem">
@@ -258,8 +262,8 @@
     }
 
     :slotted(
-            li.task-list-item:has(input[type="checkbox"].task-list-item-checkbox:checked)::before
-        ) {
+        li.task-list-item:has(input[type="checkbox"].task-list-item-checkbox:checked)::before
+    ) {
         display: flex;
         align-items: center;
         justify-content: center;

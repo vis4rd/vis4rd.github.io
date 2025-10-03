@@ -1,6 +1,8 @@
 <script setup lang="ts">
     import BorderWrapper from "@/components/BorderWrapper.vue";
     import matter from "gray-matter";
+    import type { MarkdownFrontmatter } from "../types/MarkdownFrontmatter.ts";
+    // import process from "node:process";
 
     const props = defineProps({
         source_file: {
@@ -9,22 +11,24 @@
         },
     });
 
-    const source_file =
-        process.env.NODE_ENV === "production"
-            ? `/assets/${props.source_file.slice(11)}`
-            : props.source_file;
+    // const source_file =
+    //     process.env.NODE_ENV === "production"
+    //         ? `/assets/${props.source_file.slice(11)}`
+    //         : props.source_file;
 
-    async function get_blog_frontmatter() {
+    const source_file = props.source_file;
+
+    async function get_blog_frontmatter(): Promise<MarkdownFrontmatter> {
         try {
             const response = await fetch(source_file, {
                 mode: "same-origin",
             });
             const raw_data = await response.text();
             const data = matter(raw_data).data;
-            return data;
+            return data as MarkdownFrontmatter;
         } catch (error) {
             console.error(error);
-            return "";
+            return {} as MarkdownFrontmatter;
         }
     }
 

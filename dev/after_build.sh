@@ -23,3 +23,5 @@ for file in ./src/pages/blog/*; do
     echo "Copying frontmatter of $file to $target_file"
     sed -n "/^---$/,/^---$/p" "$file" > "$target_file"
 done
+
+echo "Done!"
