@@ -9,7 +9,7 @@ import { routes } from "vue-router/auto-routes";
 const expandedRoutes = [
     {
         path: "/",
-        redirect: { name: "Home" },
+        redirect: "/home",
     },
     ...routes,
     {
