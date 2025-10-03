@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import IconLink from "@/components/IconLink.vue";
     import BorderWrapper from "@/components/BorderWrapper.vue";
 </script>

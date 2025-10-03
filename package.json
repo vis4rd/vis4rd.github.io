@@ -1,43 +1,48 @@
 {
-    "name": "website",
-    "version": "0.0.3",
+    "name": "visard-website",
     "private": true,
+    "version": "0.1.0",
     "homepage": "https://vis4rd.github.io/",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "before_build": "sh ./dev/before_build.sh",
         "after_build": "sh ./dev/after_build.sh",
-        "build": "npm run before_build && vite build && npm run after_build",
+        "build": "npm run before_build && vue-tsc -b && vite build && npm run after_build",
         "preview": "vite preview"
     },
     "dependencies": {
         "gray-matter": "^4.0.3",
-        "katex": "^0.16.9",
+        "katex": "^0.16.22",
         "markdown-it-abbr": "^2.0.0",
-        "markdown-it-anchor": "^8.6.7",
+        "markdown-it-anchor": "^9.2.0",
         "markdown-it-emoji": "^3.0.0",
         "markdown-it-footnote": "^4.0.0",
-        "markdown-it-highlightjs": "^4.0.1",
+        "markdown-it-highlightjs": "^4.2.0",
         "markdown-it-mark": "^4.0.0",
         "markdown-it-sub": "^2.0.0",
         "markdown-it-sup": "^2.0.0",
         "markdown-it-task-lists": "^2.1.1",
         "markdown-it-texmath": "^1.0.0",
-        "unplugin-vue-markdown": "^0.26.0",
-        "vite-plugin-node-polyfills": "^0.21.0",
-        "vite-plugin-pages": "^0.32.0",
-        "vue": "^3.3.4",
-        "vue-router": "^4.2.4"
+        "unplugin-vue-markdown": "^29.2.0",
+        "vue": "^3.5.22",
+        "vue-router": "^4.5.1"
     },
     "devDependencies": {
         "@iconify/vue": "^5.0.0",
-        "@rushstack/eslint-patch": "^1.2.0",
-        "@vitejs/plugin-vue": "^4.2.3",
-        "@vue/eslint-config-prettier": "^7.1.0",
-        "eslint": "^8.45.0",
-        "eslint-plugin-vue": "^9.11.0",
-        "prettier": "^2.8.8",
-        "vite": "^4.3.9"
+        "@types/node": "^24.6.0",
+        "@vitejs/plugin-vue": "^6.0.1",
+        "@vue/tsconfig": "^0.8.1",
+        "eslint": "^9.36.0",
+        "eslint-plugin-vue": "^10.5.0",
+        "prettier": "^3.6.2",
+        "typescript": "~5.9.3",
+        "unplugin-vue-router": "^0.15.0",
+        "vite": "npm:rolldown-vite@7.1.14",
+        "vite-plugin-node-polyfills": "^0.24.0",
+        "vue-tsc": "^3.1.0"
+    },
+    "overrides": {
+        "vite": "npm:rolldown-vite@7.1.14"
     }
 }

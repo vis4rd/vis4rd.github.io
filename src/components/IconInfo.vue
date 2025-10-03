@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import { Icon } from "@iconify/vue";
 
     const props = defineProps({
@@ -10,6 +10,8 @@
 
     const size = 22;
 </script>
+
+<!-- Icon search: https://icon-sets.iconify.design/fluent/?keyword=fluent -->
 
 <template>
     <span class="icon_info">

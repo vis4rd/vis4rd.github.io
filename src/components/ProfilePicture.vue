@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     const props = defineProps({
         src: {
             type: String,
@@ -25,8 +25,7 @@
         :alt="props.alt"
         :title="props.title"
         :width="props.size"
-        :height="props.size"
-    />
+        :height="props.size" />
 </template>
 
 <style scoped>

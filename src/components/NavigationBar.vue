@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import NavigationLink from "@/components/NavigationLink.vue";
 </script>
 

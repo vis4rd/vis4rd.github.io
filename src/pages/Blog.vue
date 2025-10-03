@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import BlogTab from "@/components/BlogTab.vue";
     import { defineAsyncComponent } from "vue";
 

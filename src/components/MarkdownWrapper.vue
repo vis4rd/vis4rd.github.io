@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import BorderWrapper from "@/components/BorderWrapper.vue";
     import ToolsBar from "@/components/ToolsBar.vue";
     import LinkContainer from "@/components/LinkContainer.vue";

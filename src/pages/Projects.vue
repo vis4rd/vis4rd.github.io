@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import ProjectTab from "@/components/ProjectTab.vue";
 </script>
 

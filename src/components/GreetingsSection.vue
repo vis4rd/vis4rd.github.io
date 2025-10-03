@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import ProfilePicture from "@/components/ProfilePicture.vue";
 </script>
 

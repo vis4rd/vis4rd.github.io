@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import BorderWrapper from "@/components/BorderWrapper.vue";
 </script>
 
@@ -12,8 +12,7 @@
                 <img
                     src="/assets/ohno-anyway.jpg"
                     alt="Even loading images does not work :(. Here should be 'Oh no! Anyway' image."
-                    width="300"
-                />
+                    width="300" />
             </div>
             <hr />
 
