@@ -57,7 +57,7 @@
         border-style: solid;
         border-color: var(--color-element-border);
         border-width: 1px;
-        border-radius: 6px;
+        border-radius: var(--radius-border);
 
         cursor: pointer;
     }

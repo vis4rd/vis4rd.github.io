@@ -4,11 +4,7 @@
 </script>
 
 <template>
-    <BorderWrapper
-        padding_left="2rem"
-        padding_right="2rem"
-        padding_top="1rem"
-        padding_bottom="1rem">
+    <BorderWrapper class="experience_tab_wrapper">
         <div class="experience_tab">
             <h1>
                 <slot name="job_title">Job title</slot>
@@ -63,6 +59,12 @@
 </template>
 
 <style scoped>
+    .experience_tab_wrapper {
+        padding-block: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .experience_tab {
         display: flex;
         flex-direction: column;

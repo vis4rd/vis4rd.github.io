@@ -20,13 +20,13 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
     <div class="markdown_wrapper">
-        <BorderWrapper padding_left="2rem" padding_right="2rem">
+        <BorderWrapper class="markdown_border_wrapper">
             <div class="markdown_frontmatter">
                 <h1>{{ props.frontmatter.title }}</h1>
                 <h3>{{ props.frontmatter.date }}</h3>
             </div>
         </BorderWrapper>
-        <BorderWrapper padding_left="2rem" padding_right="2rem">
+        <BorderWrapper class="markdown_border_wrapper">
             <slot></slot>
         </BorderWrapper>
         <ToolsBar>
@@ -51,6 +51,11 @@
 
         margin: 0;
         padding: 0;
+    }
+
+    .markdown_border_wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .markdown_frontmatter {
@@ -87,7 +92,7 @@
 
         border-style: solid;
         border-width: 1px;
-        border-radius: 6px;
+        border-radius: var(--radius-border);
         border-color: var(--color-element-border);
     }
 
@@ -187,7 +192,7 @@
 
     /* BLOCK QUOTES */
     :slotted(blockquote) {
-        border-radius: 6px;
+        border-radius: var(--radius-border);
 
         border-left-style: solid;
         border-left-width: 4px;

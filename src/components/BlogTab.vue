@@ -42,7 +42,7 @@
 </script>
 
 <template>
-    <BorderWrapper padding_left="0" padding_right="0" padding_top="0" padding_bottom="0">
+    <BorderWrapper class="blog_tab_wrapper">
         <router-link class="blog_tab" :to="props.source_file.slice(10, -3)">
             <img class="thumbnail" :src="blog_frontmatter.thumbnail" />
             <div class="details">
@@ -59,6 +59,10 @@
 </template>
 
 <style scoped>
+    .blog_tab_wrapper {
+        padding: 0;
+    }
+
     .blog_tab {
         display: flex;
         flex-direction: column;

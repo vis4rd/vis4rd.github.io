@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <BorderWrapper padding_left="0" padding_right="0" padding_top="0" padding_bottom="0">
+    <BorderWrapper class="project_tab_wrapper">
         <div class="project">
             <div class="info">
                 <h1 class="no-overflow">
@@ -31,6 +31,10 @@
 </template>
 
 <style scoped>
+    .project_tab_wrapper {
+        padding: 0;
+    }
+
     .project {
         display: flex;
         place-items: center;
@@ -78,8 +82,8 @@
     }
 
     .content:has(img) {
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
+        border-top-right-radius: var(--radius-border);
+        border-bottom-right-radius: var(--radius-border);
     }
 
     .content:not(:has(img)) {
@@ -93,8 +97,8 @@
     }
 
     :slotted(img) {
-        border-top-right-radius: 6px;
-        border-bottom-right-radius: 6px;
+        border-top-right-radius: var(--radius-border);
+        border-bottom-right-radius: var(--radius-border);
 
         width: 100%;
         /* TODO: Fix the hardcoded height here. Parent should take height of the info child and adjust content height to it. */

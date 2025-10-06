@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <BorderWrapper padding_left="0" padding_right="0">
+    <BorderWrapper class="footer_section_wrapper">
         <div class="footer_section">
             Made by <a href="https://github.com/vis4rd" target="_blank">me</a>.
             <br />
@@ -14,8 +14,9 @@
 </template>
 
 <style scoped>
-    .border_wrapper {
+    .footer_section_wrapper {
         border-style: dashed;
+        padding-block: 0.5rem;
     }
 
     .footer_section {

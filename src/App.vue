@@ -31,7 +31,7 @@
         padding: 1rem 0;
 
         border-style: solid;
-        border-radius: 6px;
+        border-radius: var(--radius-border);
         border-width: var(--width-section-border);
         border-color: var(--color-section-border);
     }

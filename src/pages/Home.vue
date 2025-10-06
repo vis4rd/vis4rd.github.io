@@ -9,7 +9,7 @@
     <div class="home">
         <GreetingsSection />
 
-        <BorderWrapper padding_top="0" padding_bottom="0">
+        <BorderWrapper class="info_section_wrapper">
             <div>
                 <p>... and this is my website :).</p>
 
@@ -26,7 +26,7 @@
                 </p>
             </div>
         </BorderWrapper>
-        <BorderWrapper padding_top="0">
+        <BorderWrapper class="socials_section_wrapper">
             <h2>Find me elsewhere:</h2>
             <div class="socials">
                 <IconLink icon="fluent:branch-fork-24-regular" href="https://github.com/vis4rd">
@@ -57,6 +57,15 @@
         margin: 0;
         padding: 0;
     }
+
+    .info_section_wrapper {
+        padding-block: 0;
+    }
+
+    .socials_section_wrapper {
+        padding-bottom: 2rem;
+    }
+
     .socials {
         display: flex;
         flex-direction: row;
