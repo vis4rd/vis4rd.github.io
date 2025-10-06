@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 
     function calc_my_age() {
         return Math.abs(new Date(Date.now() - 956613600000).getUTCFullYear() - 1970);
@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <BorderWrapper>
+    <SectionWrapper>
         <div>
             <h1>About me</h1>
 
@@ -53,7 +53,7 @@
                 knows, maybe you will be able to read more there.
             </p>
         </div>
-    </BorderWrapper>
+    </SectionWrapper>
 </template>
 
 <style scoped></style>

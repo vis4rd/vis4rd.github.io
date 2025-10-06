@@ -3,7 +3,7 @@
     import { defineAsyncComponent } from "vue";
 
     const blogs = import.meta.glob("/src/pages/blog/*.md");
-    const BorderWrapper = defineAsyncComponent(() => import("@/components/BorderWrapper.vue"));
+    const BorderWrapper = defineAsyncComponent(() => import("@/components/base/BorderWrapper.vue"));
 </script>
 
 <template>

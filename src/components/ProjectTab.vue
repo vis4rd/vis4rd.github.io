@@ -1,10 +1,10 @@
 <script setup lang="ts">
     import IconInfo from "@/components/IconInfo.vue";
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
-    <BorderWrapper class="project_tab_wrapper">
+    <SectionWrapper class="project_tab_wrapper">
         <div class="project">
             <div class="info">
                 <h1 class="no-overflow">
@@ -27,12 +27,12 @@
                 <slot name="content"></slot>
             </div>
         </div>
-    </BorderWrapper>
+    </SectionWrapper>
 </template>
 
 <style scoped>
     .project_tab_wrapper {
-        padding: 0;
+        padding: 0 !important;
     }
 
     .project {

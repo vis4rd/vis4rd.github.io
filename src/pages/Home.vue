@@ -1,15 +1,12 @@
 <script setup lang="ts">
     import IconLink from "@/components/IconLink.vue";
-    import BorderWrapper from "@/components/BorderWrapper.vue";
-    import GreetingsSection from "@/components/GreetingsSection.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
     import NavigationLink from "@/components/NavigationLink.vue";
 </script>
 
 <template>
     <div class="home">
-        <GreetingsSection />
-
-        <BorderWrapper class="info_section_wrapper">
+        <SectionWrapper class="info_section_wrapper">
             <div>
                 <p>... and this is my website :).</p>
 
@@ -25,8 +22,8 @@
                     <NavigationLink href="/experience">job experience</NavigationLink>.
                 </p>
             </div>
-        </BorderWrapper>
-        <BorderWrapper class="socials_section_wrapper">
+        </SectionWrapper>
+        <SectionWrapper class="socials_section_wrapper">
             <h2>Find me elsewhere:</h2>
             <div class="socials">
                 <IconLink icon="fluent:branch-fork-24-regular" href="https://github.com/vis4rd">
@@ -41,7 +38,7 @@
                     E-Mail
                 </IconLink>
             </div>
-        </BorderWrapper>
+        </SectionWrapper>
     </div>
 </template>
 

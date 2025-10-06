@@ -1,9 +1,9 @@
 <script setup lang="ts">
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
-    <BorderWrapper>
+    <SectionWrapper>
         <div>
             <h1>Page not found (404).</h1>
 
@@ -21,7 +21,7 @@
                 searching through the <router-link to="/">home page</router-link>.
             </p>
         </div>
-    </BorderWrapper>
+    </SectionWrapper>
 </template>
 
 <style scoped>

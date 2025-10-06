@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
     <div class="border_wrapper">
         <slot></slot>
@@ -12,13 +10,6 @@
         flex-direction: column;
         place-items: center;
         box-sizing: border-box;
-
-        width: 70%;
-        max-width: 960px;
-
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 0rem 2rem;
 
         border-style: solid;
         border-radius: var(--radius-border);

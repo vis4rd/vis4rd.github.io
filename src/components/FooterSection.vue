@@ -1,16 +1,16 @@
 <script setup lang="ts">
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
-    <BorderWrapper class="footer_section_wrapper">
+    <SectionWrapper class="footer_section_wrapper">
         <div class="footer_section">
             Made by <a href="https://github.com/vis4rd" target="_blank">me</a>.
             <br />
             Icons by <a href="https://iconify.design/" target="_blank">Iconify</a>. Fonts by
             <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.
         </div>
-    </BorderWrapper>
+    </SectionWrapper>
 </template>
 
 <style scoped>

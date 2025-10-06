@@ -20,20 +20,8 @@
 <style scoped>
     header {
         display: flex;
-        flex-direction: row;
         place-content: center;
-
-        width: 70%;
-        max-width: 960px;
-
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        padding: 1rem 0;
-
-        border-style: solid;
-        border-radius: var(--radius-border);
-        border-width: var(--width-section-border);
-        border-color: var(--color-section-border);
+        width: 100%;
     }
 
     main,

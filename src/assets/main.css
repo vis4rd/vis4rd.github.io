@@ -11,7 +11,9 @@ body {
 
     color: var(--color-text);
     background: var(--color-bg);
-    transition: color var(--time-transition), background-color var(--time-transition);
+    transition:
+        color var(--time-transition),
+        background-color var(--time-transition);
     line-height: 1.5;
     font-family: var(--font-text);
     font-size: var(--size-text);
@@ -25,8 +27,11 @@ body {
     flex-direction: column;
     place-items: center;
 
+    min-width: 320px;
+    width: 90%;
+
     height: 100%;
-    margin: 0;
+    margin: auto;
     padding: 0;
     padding-left: calc(100vw - 100%); /* Prevent slight horizontal shift when y-scrollabr appears */
 }

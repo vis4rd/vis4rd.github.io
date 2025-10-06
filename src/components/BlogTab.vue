@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
     import matter from "gray-matter";
     import type { MarkdownFrontmatter } from "../types/MarkdownFrontmatter.ts";
 
@@ -42,7 +42,7 @@
 </script>
 
 <template>
-    <BorderWrapper class="blog_tab_wrapper">
+    <SectionWrapper class="blog_tab_wrapper">
         <router-link class="blog_tab" :to="props.source_file.slice(10, -3)">
             <img class="thumbnail" :src="blog_frontmatter.thumbnail" />
             <div class="details">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </router-link>
-    </BorderWrapper>
+    </SectionWrapper>
 </template>
 
 <style scoped>

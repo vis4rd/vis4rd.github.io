@@ -1,10 +1,10 @@
 <script setup lang="ts">
     import IconLink from "@/components/IconLink.vue";
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
-    <BorderWrapper>
+    <SectionWrapper>
         <h1>Playground :)</h1>
         Header part Main part
         <mark>Marked text</mark>
@@ -19,7 +19,7 @@
         <dialog>Oof</dialog>
         <aside>Aside content</aside>
         <IconLink icon="fa-home">icon yeah</IconLink>
-    </BorderWrapper>
+    </SectionWrapper>
 </template>
 
 <style scoped></style>

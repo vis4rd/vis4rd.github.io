@@ -1,10 +1,10 @@
 <script setup lang="ts">
     import IconInfo from "@/components/IconInfo.vue";
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
-    <BorderWrapper class="experience_tab_wrapper">
+    <SectionWrapper>
         <div class="experience_tab">
             <h1>
                 <slot name="job_title">Job title</slot>
@@ -55,16 +55,10 @@
                 </div>
             </div>
         </div>
-    </BorderWrapper>
+    </SectionWrapper>
 </template>
 
 <style scoped>
-    .experience_tab_wrapper {
-        padding-block: 1rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
     .experience_tab {
         display: flex;
         flex-direction: column;

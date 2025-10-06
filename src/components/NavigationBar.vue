@@ -1,28 +1,26 @@
 <script setup lang="ts">
     import NavigationLink from "@/components/NavigationLink.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
-    <nav>
-        <NavigationLink href="/home">home/</NavigationLink>
-        <NavigationLink href="/about">about/</NavigationLink>
-        <NavigationLink href="/projects">projects/</NavigationLink>
-        <NavigationLink href="/experience">experience/</NavigationLink>
-        <NavigationLink href="/blog">blog/</NavigationLink>
-    </nav>
+    <SectionWrapper>
+        <nav>
+            <NavigationLink href="/home">home/</NavigationLink>
+            <NavigationLink href="/about">about/</NavigationLink>
+            <NavigationLink href="/projects">projects/</NavigationLink>
+            <NavigationLink href="/experience">experience/</NavigationLink>
+            <NavigationLink href="/blog">blog/</NavigationLink>
+        </nav>
+    </SectionWrapper>
 </template>
 
 <style scoped>
     nav {
         display: flex;
-        flex-direction: row;
         place-content: center;
-
         gap: 1rem;
 
         width: 100%;
-
-        margin: 0;
-        padding: 0;
     }
 </style>

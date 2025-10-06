@@ -1,15 +1,10 @@
 <script setup lang="ts">
-    import BorderWrapper from "@/components/BorderWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
     import ToolsBar from "@/components/ToolsBar.vue";
     import LinkContainer from "@/components/LinkContainer.vue";
     import "highlight.js/styles/github-dark.css";
     import type { MarkdownFrontmatter } from "../types/MarkdownFrontmatter";
 
-    // const props = defineProps({
-    //     frontmatter: {
-    //         type: Object,
-    //     },
-    // });
     const props = defineProps<{
         frontmatter: MarkdownFrontmatter;
     }>();
@@ -20,15 +15,15 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
     <div class="markdown_wrapper">
-        <BorderWrapper class="markdown_border_wrapper">
+        <SectionWrapper>
             <div class="markdown_frontmatter">
                 <h1>{{ props.frontmatter.title }}</h1>
                 <h3>{{ props.frontmatter.date }}</h3>
             </div>
-        </BorderWrapper>
-        <BorderWrapper class="markdown_border_wrapper">
+        </SectionWrapper>
+        <SectionWrapper>
             <slot></slot>
-        </BorderWrapper>
+        </SectionWrapper>
         <ToolsBar>
             <LinkContainer back_to_top title="Scroll to the top of this page.">
                 Back to top
@@ -45,17 +40,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        width: 100%;
-        height: 100%;
-
-        margin: 0;
-        padding: 0;
-    }
-
-    .markdown_border_wrapper {
-        padding-left: 2rem;
-        padding-right: 2rem;
     }
 
     .markdown_frontmatter {
