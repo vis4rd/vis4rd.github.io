@@ -7,7 +7,6 @@
     <SectionWrapper>
         <nav>
             <NavigationLink href="/home">home/</NavigationLink>
-            <NavigationLink href="/about">about/</NavigationLink>
             <NavigationLink href="/projects">projects/</NavigationLink>
             <NavigationLink href="/experience">experience/</NavigationLink>
             <NavigationLink href="/blog">blog/</NavigationLink>

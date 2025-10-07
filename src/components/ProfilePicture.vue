@@ -38,7 +38,7 @@
 
         font-size: 0.85rem;
 
-        border-radius: 50%;
+        border-radius: var(--radius-border);
         border-style: dotted;
         border-color: var(--color-element-border);
         border-width: 2px;

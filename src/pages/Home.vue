@@ -1,28 +1,12 @@
 <script setup lang="ts">
     import IconLink from "@/components/IconLink.vue";
     import SectionWrapper from "@/components/base/SectionWrapper.vue";
-    import NavigationLink from "@/components/NavigationLink.vue";
+    import AboutMeTab from "@/components/AboutMeTab.vue";
 </script>
 
 <template>
     <div class="home">
-        <SectionWrapper class="info_section_wrapper">
-            <div>
-                <p>... and this is my website :).</p>
-
-                <p>
-                    I'm currently working at
-                    <a href="https://www.nokia.com/networks/" target="_blank">Nokia</a> as a C++
-                    Software Engineer.
-                </p>
-
-                <p>
-                    Feel free to check out my
-                    <NavigationLink href="/projects">projects</NavigationLink> or
-                    <NavigationLink href="/experience">job experience</NavigationLink>.
-                </p>
-            </div>
-        </SectionWrapper>
+        <AboutMeTab />
         <SectionWrapper class="socials_section_wrapper">
             <h2>Find me elsewhere:</h2>
             <div class="socials">
@@ -56,7 +40,9 @@
     }
 
     .info_section_wrapper {
-        padding-block: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
     }
 
     .socials_section_wrapper {
