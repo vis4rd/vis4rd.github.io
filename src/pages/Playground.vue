@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import IconLink from "@/components/IconLink.vue";
+    import IconLinkTile from "@/components/IconLinkTile.vue";
     import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
@@ -18,7 +18,7 @@
         <kbd>Keyboard key</kbd>
         <dialog>Oof</dialog>
         <aside>Aside content</aside>
-        <IconLink icon="fa-home">icon yeah</IconLink>
+        <IconLinkTile icon="fa-home">icon yeah</IconLinkTile>
     </SectionWrapper>
 </template>
 

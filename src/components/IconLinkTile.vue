@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import { Icon } from "@iconify/vue";
+    import TileWrapper from "@/components/base/TileWrapper.vue";
 
     const props = defineProps({
         icon: {
@@ -38,44 +39,45 @@
 <!-- Icon search: https://icon-sets.iconify.design/fluent/?keyword=fluent -->
 
 <template>
-    <a
-        class="icon_link"
-        :href="props.href"
-        :title="props.title"
-        :disabled="props.disabled"
-        :active="props.active"
-        target="_blank">
-        <Icon :icon="props.icon" :width="props.size" :height="props.size" @click="go_to_link()" />
-        <div>
-            <slot></slot>
-        </div>
-    </a>
+    <TileWrapper class="icon_link_tile_wrapper">
+        <a
+            class="icon_link_tile"
+            :href="props.href"
+            :title="props.title"
+            :disabled="props.disabled"
+            :active="props.active"
+            target="_blank">
+            <Icon
+                :icon="props.icon"
+                :width="props.size"
+                :height="props.size"
+                @click="go_to_link()" />
+        </a>
+    </TileWrapper>
 </template>
 
 <style scoped>
-    .icon_link {
+    .icon_link_tile_wrapper {
+        padding: 0;
+    }
+
+    .icon_link_tile {
         display: flex;
-        flex-direction: row;
         align-items: center;
+        color: var(--color-heading);
 
-        width: fit-content;
+        border-radius: var(--radius-border);
 
-        gap: 0.2rem;
-        padding: 0.3rem;
-
-        border-bottom-style: dotted;
-        border-width: 2px;
-        border-color: var(--color-a);
+        padding-inline: 0.6rem;
+        padding-block: 0.5rem;
+        height: 100%;
 
         transition: var(--time-transition);
     }
 
-    .icon_link:hover {
-        border-color: var(--color-a-hover);
-        transition: var(--time-transition);
+    .icon_link_tile:hover {
+        background-color: var(--color-element-bg-hover);
+        color: var(--color-border-hover);
         cursor: pointer;
-    }
-    .icon_link:hover .slot_part {
-        color: var(--color-a-hover);
     }
 </style>

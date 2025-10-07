@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-    import BorderWrapper from "./BorderWrapper.vue";
+    import TileWrapper from "./TileWrapper.vue";
 </script>
 
 <template>
-    <BorderWrapper class="section_wrapper">
+    <TileWrapper class="section_wrapper">
         <slot></slot>
-    </BorderWrapper>
+    </TileWrapper>
 </template>
 
 <style scoped>
@@ -13,8 +13,6 @@
         max-width: 1000px;
         width: 100%;
 
-        padding-block: 0.5rem;
         padding-inline: 2rem;
-        margin-top: 0.5rem;
     }
 </style>

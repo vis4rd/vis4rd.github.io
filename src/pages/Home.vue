@@ -1,27 +1,27 @@
 <script setup lang="ts">
-    import IconLink from "@/components/IconLink.vue";
-    import SectionWrapper from "@/components/base/SectionWrapper.vue";
+    import IconLinkTile from "@/components/IconLinkTile.vue";
     import AboutMeTab from "@/components/AboutMeTab.vue";
+    import TileWrapper from "@/components/base/TileWrapper.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
     <div class="home">
         <AboutMeTab />
-        <SectionWrapper class="socials_section_wrapper">
-            <h2>Find me elsewhere:</h2>
-            <div class="socials">
-                <IconLink icon="fluent:branch-fork-24-regular" href="https://github.com/vis4rd">
-                    GitHub
-                </IconLink>
-                <IconLink
-                    icon="fluent:people-16-regular"
-                    href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US">
-                    LinkedIn
-                </IconLink>
-                <IconLink icon="fluent:mail-16-regular" href="mailto:aleksander.kluczka@gmail.com">
-                    E-Mail
-                </IconLink>
-            </div>
+        <SectionWrapper class="socials">
+            <TileWrapper class="socials_label"> My socials: </TileWrapper>
+            <IconLinkTile
+                icon="fluent:branch-fork-24-regular"
+                href="https://github.com/vis4rd"
+                title="My GitHub profile" />
+            <IconLinkTile
+                icon="fluent:people-16-regular"
+                href="https://www.linkedin.com/in/aleksander-kluczka/?locale=en_US"
+                title="My Linked-In profile" />
+            <IconLinkTile
+                icon="fluent:mail-16-regular"
+                href="mailto:aleksander.kluczka@gmail.com"
+                title="Send me an e-mail" />
         </SectionWrapper>
     </div>
 </template>
@@ -39,20 +39,21 @@
         padding: 0;
     }
 
-    .info_section_wrapper {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .socials_section_wrapper {
-        padding-bottom: 2rem;
-    }
-
     .socials {
-        display: flex;
         flex-direction: row;
-        align-items: center;
         gap: 0.5rem;
+
+        padding: 0;
+
+        border: none;
+    }
+
+    .socials > * {
+        margin-block: 0;
+        height: 100%;
+    }
+
+    .socials_label {
+        padding-inline: 0.5rem;
     }
 </style>

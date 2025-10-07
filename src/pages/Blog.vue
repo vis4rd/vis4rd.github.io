@@ -3,7 +3,9 @@
     import { defineAsyncComponent } from "vue";
 
     const blogs = import.meta.glob("/src/pages/blog/*.md");
-    const BorderWrapper = defineAsyncComponent(() => import("@/components/base/BorderWrapper.vue"));
+    const SectionWrapper = defineAsyncComponent(
+        () => import("@/components/base/SectionWrapper.vue")
+    );
 </script>
 
 <template>
@@ -11,9 +13,9 @@
         <Suspense v-for="(_, path) in blogs">
             <BlogTab :source_file="path" />
         </Suspense>
-        <BorderWrapper v-if="Object.keys(blogs).length === 0">
+        <SectionWrapper v-if="Object.keys(blogs).length === 0">
             There are no blogs here just yet. Come back soon!
-        </BorderWrapper>
+        </SectionWrapper>
     </div>
 </template>
 

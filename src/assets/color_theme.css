@@ -1,7 +1,7 @@
 @layer theme {
     :root {
         /* non-color variables */
-        --time-transition: 0s;
+        --time-transition: 0.15s;
         --width-section-border: 1px;
         --width-element-border: 1px;
 

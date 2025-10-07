@@ -1,9 +1,10 @@
 <script setup lang="ts">
     import ProfilePicture from "@/components/ProfilePicture.vue";
+    import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
-    <div class="about_me_tab_wrapper">
+    <SectionWrapper class="about_me_tab_wrapper">
         <ProfilePicture src="https://avatars.githubusercontent.com/u/67486508?v=4" size="200" />
         <div class="about_me">
             <h1 class="header_with_normal_font">Hi, I'm visard!</h1>
@@ -16,7 +17,7 @@
 
             <p>Here I share my projects and blog posts. Enjoy!</p>
         </div>
-    </div>
+    </SectionWrapper>
 </template>
 
 <style scoped>
@@ -26,11 +27,8 @@
 
         gap: 2rem;
 
-        max-width: 1000px;
-        width: 100%;
-
-        padding-inline: 2rem;
-        margin-top: 0.5rem;
+        border: none !important;
+        padding: 0 !important;
     }
 
     .about_me {
