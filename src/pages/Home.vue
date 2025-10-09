@@ -1,13 +1,13 @@
 <script setup lang="ts">
     import IconLinkTile from "@/components/IconLinkTile.vue";
-    import AboutMeTab from "@/components/AboutMeTab.vue";
+    import AboutMeSection from "@/components/AboutMeSection.vue";
     import TileWrapper from "@/components/base/TileWrapper.vue";
     import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
 
 <template>
     <div class="home">
-        <AboutMeTab />
+        <AboutMeSection />
         <SectionWrapper class="socials">
             <TileWrapper class="socials_label"> My socials: </TileWrapper>
             <IconLinkTile
