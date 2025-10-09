@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import IconLinkTile from "@/components/IconLinkTile.vue";
-    import AboutMeSection from "@/components/AboutMeSection.vue";
+    import AboutMeSection from "@/components/sections/AboutMeSection.vue";
     import TileWrapper from "@/components/base/TileWrapper.vue";
     import SectionWrapper from "@/components/base/SectionWrapper.vue";
 </script>
