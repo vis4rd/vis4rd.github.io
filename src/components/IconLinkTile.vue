@@ -28,12 +28,6 @@
             default: false,
         },
     });
-
-    function go_to_link() {
-        if (props.href !== "") {
-            window.open(props.href, "_blank");
-        }
-    }
 </script>
 
 <!-- Icon search: https://icon-sets.iconify.design/fluent/?keyword=fluent -->
@@ -51,8 +45,7 @@
                 class="icon_link_tile_icon"
                 :icon="props.icon"
                 :width="props.size"
-                :height="props.size"
-                @click="go_to_link()" />
+                :height="props.size" />
         </a>
     </TileWrapper>
 </template>
