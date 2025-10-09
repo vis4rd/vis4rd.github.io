@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import ExperienceTab from "@/components/ExperienceTab.vue";
+    import ExperienceTab from "@/components/tabs/ExperienceTab.vue";
 </script>
 
 <template>

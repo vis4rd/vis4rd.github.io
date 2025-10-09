@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import BlogTab from "@/components/BlogTab.vue";
+    import BlogTab from "@/components/tabs/BlogTab.vue";
     import { defineAsyncComponent } from "vue";
 
     const blogs = import.meta.glob("/src/pages/blog/*.md");

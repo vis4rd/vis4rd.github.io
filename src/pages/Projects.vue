@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import ProjectTab from "@/components/ProjectTab.vue";
+    import ProjectTab from "@/components/tabs/ProjectTab.vue";
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import SectionWrapper from "@/components/base/SectionWrapper.vue";
     import matter from "gray-matter";
-    import type { MarkdownFrontmatter } from "../types/MarkdownFrontmatter.ts";
+    import type { MarkdownFrontmatter } from "../../types/MarkdownFrontmatter.ts";
 
     const props = defineProps({
         source_file: {
