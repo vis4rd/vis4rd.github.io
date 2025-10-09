@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -13,6 +13,33 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>visard.me</title>
+        <script>
+            // Set theme ASAP to avoid flash and let CSS rely on [data-theme]
+            (function () {
+                const THEME_MODE_KEY = "themeMode"; // "system" | "light" | "dark"
+
+                function apply(mode) {
+                    if (mode === "system") {
+                        var prefersDark =
+                            window.matchMedia &&
+                            window.matchMedia("(prefers-color-scheme: dark)").matches;
+                        mode = prefersDark ? "dark" : "light";
+                    }
+
+                    document.documentElement.setAttribute("data-theme", mode);
+                }
+
+                var mode = "system";
+                try {
+                    const stored = localStorage.getItem(THEME_MODE_KEY);
+                    if (stored !== null) {
+                        mode = stored;
+                    }
+                } catch (e) {}
+
+                apply(mode);
+            })();
+        </script>
     </head>
 
     <body>
