@@ -1,11 +1,11 @@
 <script setup lang="ts">
-    import NavigationBar from "@/components/NavigationBar.vue";
+    import NavigationBarSection from "@/components/NavigationBarSection.vue";
     import FooterSection from "@/components/sections/FooterSection.vue";
 </script>
 
 <template>
     <header>
-        <NavigationBar />
+        <NavigationBarSection />
     </header>
 
     <main>
