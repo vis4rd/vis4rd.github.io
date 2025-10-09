@@ -4,8 +4,8 @@
 
 <template>
     <SectionWrapper class="tile_bar_wrapper">
-        <div class="horizontal">
-            <slot name="left"> </slot>
+        <div class="horizontal left_side">
+            <slot name="left" default> </slot>
         </div>
         <div class="horizontal">
             <slot name="right"> </slot>
@@ -37,5 +37,13 @@
         display: flex;
         gap: 0.5rem;
         place-items: center;
+    }
+
+    .horizontal:not(:has(*)) {
+        display: none;
+    }
+
+    .left_side {
+        flex-grow: 1;
     }
 </style>

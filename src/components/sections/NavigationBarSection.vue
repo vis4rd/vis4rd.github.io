@@ -1,25 +1,18 @@
 <script setup lang="ts">
-    import NavigationLink from "@/components/NavigationLink.vue";
-    import SectionWrapper from "@/components/base/SectionWrapper.vue";
+    import NavigationTile from "@/components/NavigationTile.vue";
+    import TileBar from "@/components/TileBar.vue";
 </script>
 
 <template>
-    <SectionWrapper>
-        <nav>
-            <NavigationLink href="/home">home/</NavigationLink>
-            <NavigationLink href="/projects">projects/</NavigationLink>
-            <NavigationLink href="/experience">experience/</NavigationLink>
-            <NavigationLink href="/blog">blog/</NavigationLink>
-        </nav>
-    </SectionWrapper>
+    <TileBar>
+        <template #left>
+            <NavigationTile class="expand" />
+        </template>
+    </TileBar>
 </template>
 
 <style scoped>
-    nav {
-        display: flex;
-        place-content: center;
-        gap: 1rem;
-
+    .expand {
         width: 100%;
     }
 </style>
