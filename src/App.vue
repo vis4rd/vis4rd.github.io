@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import NavigationBarSection from "@/components/NavigationBarSection.vue";
+    import NavigationBarSection from "@/components/sections/NavigationBarSection.vue";
     import FooterSection from "@/components/sections/FooterSection.vue";
 </script>
 
