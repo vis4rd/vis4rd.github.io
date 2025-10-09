@@ -13,7 +13,7 @@
                 >
             </template>
             <template #languages>Vue 3</template>
-            <template #libraries>Vite, Google Fonts, FontAwesome</template>
+            <template #libraries>Vite, Google Fonts, Iconify</template>
             <template #content>
                 <img src="/assets/visard.png" />
             </template>
