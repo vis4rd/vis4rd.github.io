@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import ProjectTab from "@/components/tabs/ProjectTab.vue";
+    import AsyncImage from "@/components/AsyncImage.vue";
 </script>
 
 <template>
@@ -15,7 +16,12 @@
             <template #languages>Vue 3</template>
             <template #libraries>Vite, Google Fonts, Iconify</template>
             <template #content>
-                <img src="/assets/visard.png" />
+                <Suspense>
+                    <template #fallback>
+                        <p>Loading image...</p>
+                    </template>
+                    <AsyncImage src="/assets/visard.png" />
+                </Suspense>
             </template>
         </ProjectTab>
 
@@ -47,7 +53,12 @@
             <template #languages>C++, GLSL, CMake</template>
             <template #libraries>OpenGL, GLFW, ImGui, EnTT</template>
             <template #content>
-                <img src="/assets/monoshot.png" />
+                <Suspense>
+                    <template #fallback>
+                        <p>Loading image...</p>
+                    </template>
+                    <AsyncImage src="/assets/monoshot.png" />
+                </Suspense>
             </template>
         </ProjectTab>
 
@@ -64,7 +75,12 @@
             <template #languages>12+ programming languages</template>
             <template #libraries>20+ libraries and frameworks</template>
             <template #content>
-                <img src="/assets/agh-ust.jpg" />
+                <Suspense>
+                    <template #fallback>
+                        <p>Loading image...</p>
+                    </template>
+                    <AsyncImage src="/assets/agh-ust.jpg" />
+                </Suspense>
             </template>
         </ProjectTab>
     </div>
